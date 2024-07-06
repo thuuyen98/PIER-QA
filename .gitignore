@@ -1,0 +1,8 @@
+Model/*.gguf
+venv/*
+.streamlit/*
+.idea/*
+__pycache__/*
+!.gitignore
+Database/*
+Database_new/*

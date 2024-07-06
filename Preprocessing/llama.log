@@ -1,0 +1,769 @@
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  918][         clip_model_load] clip_model_load: loaded meta data with 18 key-value pairs and 377 tensors from ../Model/mmproj-model-f16.gguf
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  929][         clip_model_load] clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   0:                       general.architecture str              = clip
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   4:                          general.file_type u32              = 1
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   7:                     clip.vision.image_size u32              = 336
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   8:                     clip.vision.patch_size u32              = 14
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   9:               clip.vision.embedding_length u32              = 1024
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  10:            clip.vision.feed_forward_length u32              = 4096
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  11:                 clip.vision.projection_dim u32              = 768
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  12:           clip.vision.attention.head_count u32              = 16
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  13:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  14:                    clip.vision.block_count u32              = 23
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  15:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  16:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  17:                              clip.use_gelu bool             = false
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  954][         clip_model_load] clip_model_load: - type  f32:  235 tensors
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  954][         clip_model_load] clip_model_load: - type  f16:  142 tensors
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  996][         clip_model_load] clip_model_load: CLIP using CUDA backend
+[1720041856] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp: 1039][         clip_model_load] clip_model_load: params backend buffer size =  595.49 MB (377 tensors)
+[1720041857] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.image_grid_pinpoints not found in file
+[1720041857] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.mm_patch_merge_type not found in file
+[1720041857] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.image_crop_resolution not found in file
+[1720041857] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp: 1316][         clip_model_load] clip_model_load: compute allocated memory: 32.89 MB
+[1720041859] encode_image_with_clip: image embedding created: 576 tokens
+[1720041859] 
+encode_image_with_clip: image encoded in   104.33 ms by CLIP (    0.18 ms per image patch)
+[1720041862] encode_image_with_clip: image embedding created: 576 tokens
+[1720041862] 
+encode_image_with_clip: image encoded in    65.16 ms by CLIP (    0.11 ms per image patch)
+[1720041867] encode_image_with_clip: image embedding created: 576 tokens
+[1720041867] 
+encode_image_with_clip: image encoded in    65.69 ms by CLIP (    0.11 ms per image patch)
+[1720041872] encode_image_with_clip: image embedding created: 576 tokens
+[1720041872] 
+encode_image_with_clip: image encoded in    65.09 ms by CLIP (    0.11 ms per image patch)
+[1720041874] encode_image_with_clip: image embedding created: 576 tokens
+[1720041874] 
+encode_image_with_clip: image encoded in    64.64 ms by CLIP (    0.11 ms per image patch)
+[1720041878] encode_image_with_clip: image embedding created: 576 tokens
+[1720041878] 
+encode_image_with_clip: image encoded in    64.74 ms by CLIP (    0.11 ms per image patch)
+[1720041880] encode_image_with_clip: image embedding created: 576 tokens
+[1720041880] 
+encode_image_with_clip: image encoded in    65.35 ms by CLIP (    0.11 ms per image patch)
+[1720041882] encode_image_with_clip: image embedding created: 576 tokens
+[1720041882] 
+encode_image_with_clip: image encoded in    64.81 ms by CLIP (    0.11 ms per image patch)
+[1720041885] encode_image_with_clip: image embedding created: 576 tokens
+[1720041885] 
+encode_image_with_clip: image encoded in    64.72 ms by CLIP (    0.11 ms per image patch)
+[1720041889] encode_image_with_clip: image embedding created: 576 tokens
+[1720041889] 
+encode_image_with_clip: image encoded in    64.57 ms by CLIP (    0.11 ms per image patch)
+[1720041892] encode_image_with_clip: image embedding created: 576 tokens
+[1720041892] 
+encode_image_with_clip: image encoded in    66.57 ms by CLIP (    0.12 ms per image patch)
+[1720041894] encode_image_with_clip: image embedding created: 576 tokens
+[1720041894] 
+encode_image_with_clip: image encoded in    65.62 ms by CLIP (    0.11 ms per image patch)
+[1720041895] encode_image_with_clip: image embedding created: 576 tokens
+[1720041895] 
+encode_image_with_clip: image encoded in    64.77 ms by CLIP (    0.11 ms per image patch)
+[1720041898] encode_image_with_clip: image embedding created: 576 tokens
+[1720041898] 
+encode_image_with_clip: image encoded in    67.53 ms by CLIP (    0.12 ms per image patch)
+[1720041900] encode_image_with_clip: image embedding created: 576 tokens
+[1720041900] 
+encode_image_with_clip: image encoded in    65.43 ms by CLIP (    0.11 ms per image patch)
+[1720041903] encode_image_with_clip: image embedding created: 576 tokens
+[1720041903] 
+encode_image_with_clip: image encoded in    68.57 ms by CLIP (    0.12 ms per image patch)
+[1720041907] encode_image_with_clip: image embedding created: 576 tokens
+[1720041907] 
+encode_image_with_clip: image encoded in    64.61 ms by CLIP (    0.11 ms per image patch)
+[1720041909] encode_image_with_clip: image embedding created: 576 tokens
+[1720041909] 
+encode_image_with_clip: image encoded in    66.32 ms by CLIP (    0.12 ms per image patch)
+[1720041913] encode_image_with_clip: image embedding created: 576 tokens
+[1720041913] 
+encode_image_with_clip: image encoded in    68.00 ms by CLIP (    0.12 ms per image patch)
+[1720041915] encode_image_with_clip: image embedding created: 576 tokens
+[1720041915] 
+encode_image_with_clip: image encoded in    65.52 ms by CLIP (    0.11 ms per image patch)
+[1720041919] encode_image_with_clip: image embedding created: 576 tokens
+[1720041919] 
+encode_image_with_clip: image encoded in    65.43 ms by CLIP (    0.11 ms per image patch)
+[1720041922] encode_image_with_clip: image embedding created: 576 tokens
+[1720041922] 
+encode_image_with_clip: image encoded in    65.29 ms by CLIP (    0.11 ms per image patch)
+[1720041926] encode_image_with_clip: image embedding created: 576 tokens
+[1720041926] 
+encode_image_with_clip: image encoded in    66.01 ms by CLIP (    0.11 ms per image patch)
+[1720041930] encode_image_with_clip: image embedding created: 576 tokens
+[1720041930] 
+encode_image_with_clip: image encoded in    68.93 ms by CLIP (    0.12 ms per image patch)
+[1720041933] encode_image_with_clip: image embedding created: 576 tokens
+[1720041933] 
+encode_image_with_clip: image encoded in    68.89 ms by CLIP (    0.12 ms per image patch)
+[1720041936] encode_image_with_clip: image embedding created: 576 tokens
+[1720041936] 
+encode_image_with_clip: image encoded in    67.08 ms by CLIP (    0.12 ms per image patch)
+[1720041940] encode_image_with_clip: image embedding created: 576 tokens
+[1720041940] 
+encode_image_with_clip: image encoded in    68.70 ms by CLIP (    0.12 ms per image patch)
+[1720041942] encode_image_with_clip: image embedding created: 576 tokens
+[1720041942] 
+encode_image_with_clip: image encoded in    66.20 ms by CLIP (    0.11 ms per image patch)
+[1720041945] encode_image_with_clip: image embedding created: 576 tokens
+[1720041945] 
+encode_image_with_clip: image encoded in    65.14 ms by CLIP (    0.11 ms per image patch)
+[1720041947] encode_image_with_clip: image embedding created: 576 tokens
+[1720041947] 
+encode_image_with_clip: image encoded in    67.61 ms by CLIP (    0.12 ms per image patch)
+[1720041951] encode_image_with_clip: image embedding created: 576 tokens
+[1720041951] 
+encode_image_with_clip: image encoded in    66.11 ms by CLIP (    0.11 ms per image patch)
+[1720041954] encode_image_with_clip: image embedding created: 576 tokens
+[1720041954] 
+encode_image_with_clip: image encoded in    66.69 ms by CLIP (    0.12 ms per image patch)
+[1720041958] encode_image_with_clip: image embedding created: 576 tokens
+[1720041958] 
+encode_image_with_clip: image encoded in    66.96 ms by CLIP (    0.12 ms per image patch)
+[1720041961] encode_image_with_clip: image embedding created: 576 tokens
+[1720041961] 
+encode_image_with_clip: image encoded in    67.96 ms by CLIP (    0.12 ms per image patch)
+[1720041965] encode_image_with_clip: image embedding created: 576 tokens
+[1720041965] 
+encode_image_with_clip: image encoded in    66.25 ms by CLIP (    0.12 ms per image patch)
+[1720041969] encode_image_with_clip: image embedding created: 576 tokens
+[1720041969] 
+encode_image_with_clip: image encoded in    66.39 ms by CLIP (    0.12 ms per image patch)
+[1720041972] encode_image_with_clip: image embedding created: 576 tokens
+[1720041972] 
+encode_image_with_clip: image encoded in    68.93 ms by CLIP (    0.12 ms per image patch)
+[1720041974] encode_image_with_clip: image embedding created: 576 tokens
+[1720041974] 
+encode_image_with_clip: image encoded in    67.62 ms by CLIP (    0.12 ms per image patch)
+[1720041976] encode_image_with_clip: image embedding created: 576 tokens
+[1720041976] 
+encode_image_with_clip: image encoded in    69.36 ms by CLIP (    0.12 ms per image patch)
+[1720041981] encode_image_with_clip: image embedding created: 576 tokens
+[1720041981] 
+encode_image_with_clip: image encoded in    67.26 ms by CLIP (    0.12 ms per image patch)
+[1720041985] encode_image_with_clip: image embedding created: 576 tokens
+[1720041985] 
+encode_image_with_clip: image encoded in    66.87 ms by CLIP (    0.12 ms per image patch)
+[1720041989] encode_image_with_clip: image embedding created: 576 tokens
+[1720041989] 
+encode_image_with_clip: image encoded in    72.02 ms by CLIP (    0.13 ms per image patch)
+[1720041994] encode_image_with_clip: image embedding created: 576 tokens
+[1720041994] 
+encode_image_with_clip: image encoded in    68.53 ms by CLIP (    0.12 ms per image patch)
+[1720041997] encode_image_with_clip: image embedding created: 576 tokens
+[1720041997] 
+encode_image_with_clip: image encoded in    66.83 ms by CLIP (    0.12 ms per image patch)
+[1720042002] encode_image_with_clip: image embedding created: 576 tokens
+[1720042002] 
+encode_image_with_clip: image encoded in    67.19 ms by CLIP (    0.12 ms per image patch)
+[1720042005] encode_image_with_clip: image embedding created: 576 tokens
+[1720042005] 
+encode_image_with_clip: image encoded in    66.76 ms by CLIP (    0.12 ms per image patch)
+[1720042009] encode_image_with_clip: image embedding created: 576 tokens
+[1720042009] 
+encode_image_with_clip: image encoded in    68.17 ms by CLIP (    0.12 ms per image patch)
+[1720042012] encode_image_with_clip: image embedding created: 576 tokens
+[1720042012] 
+encode_image_with_clip: image encoded in    68.22 ms by CLIP (    0.12 ms per image patch)
+[1720042016] encode_image_with_clip: image embedding created: 576 tokens
+[1720042016] 
+encode_image_with_clip: image encoded in    66.69 ms by CLIP (    0.12 ms per image patch)
+[1720042019] encode_image_with_clip: image embedding created: 576 tokens
+[1720042019] 
+encode_image_with_clip: image encoded in    68.33 ms by CLIP (    0.12 ms per image patch)
+[1720042022] encode_image_with_clip: image embedding created: 576 tokens
+[1720042022] 
+encode_image_with_clip: image encoded in    70.61 ms by CLIP (    0.12 ms per image patch)
+[1720042025] encode_image_with_clip: image embedding created: 576 tokens
+[1720042025] 
+encode_image_with_clip: image encoded in    66.11 ms by CLIP (    0.11 ms per image patch)
+[1720042028] encode_image_with_clip: image embedding created: 576 tokens
+[1720042028] 
+encode_image_with_clip: image encoded in    68.76 ms by CLIP (    0.12 ms per image patch)
+[1720042031] encode_image_with_clip: image embedding created: 576 tokens
+[1720042031] 
+encode_image_with_clip: image encoded in    67.15 ms by CLIP (    0.12 ms per image patch)
+[1720042033] encode_image_with_clip: image embedding created: 576 tokens
+[1720042033] 
+encode_image_with_clip: image encoded in    70.25 ms by CLIP (    0.12 ms per image patch)
+[1720042036] encode_image_with_clip: image embedding created: 576 tokens
+[1720042036] 
+encode_image_with_clip: image encoded in    67.01 ms by CLIP (    0.12 ms per image patch)
+[1720042039] encode_image_with_clip: image embedding created: 576 tokens
+[1720042039] 
+encode_image_with_clip: image encoded in    69.61 ms by CLIP (    0.12 ms per image patch)
+[1720042042] encode_image_with_clip: image embedding created: 576 tokens
+[1720042042] 
+encode_image_with_clip: image encoded in    66.38 ms by CLIP (    0.12 ms per image patch)
+[1720042047] encode_image_with_clip: image embedding created: 576 tokens
+[1720042047] 
+encode_image_with_clip: image encoded in    68.09 ms by CLIP (    0.12 ms per image patch)
+[1720042050] encode_image_with_clip: image embedding created: 576 tokens
+[1720042050] 
+encode_image_with_clip: image encoded in    66.98 ms by CLIP (    0.12 ms per image patch)
+[1720042053] encode_image_with_clip: image embedding created: 576 tokens
+[1720042053] 
+encode_image_with_clip: image encoded in    65.55 ms by CLIP (    0.11 ms per image patch)
+[1720042056] encode_image_with_clip: image embedding created: 576 tokens
+[1720042056] 
+encode_image_with_clip: image encoded in    66.42 ms by CLIP (    0.12 ms per image patch)
+[1720042059] encode_image_with_clip: image embedding created: 576 tokens
+[1720042059] 
+encode_image_with_clip: image encoded in    66.47 ms by CLIP (    0.12 ms per image patch)
+[1720042064] encode_image_with_clip: image embedding created: 576 tokens
+[1720042064] 
+encode_image_with_clip: image encoded in    66.15 ms by CLIP (    0.11 ms per image patch)
+[1720042067] encode_image_with_clip: image embedding created: 576 tokens
+[1720042067] 
+encode_image_with_clip: image encoded in    67.56 ms by CLIP (    0.12 ms per image patch)
+[1720042069] encode_image_with_clip: image embedding created: 576 tokens
+[1720042069] 
+encode_image_with_clip: image encoded in    67.43 ms by CLIP (    0.12 ms per image patch)
+[1720042072] encode_image_with_clip: image embedding created: 576 tokens
+[1720042072] 
+encode_image_with_clip: image encoded in    67.37 ms by CLIP (    0.12 ms per image patch)
+[1720042396] encode_image_with_clip: image embedding created: 576 tokens
+[1720042396] 
+encode_image_with_clip: image encoded in    87.20 ms by CLIP (    0.15 ms per image patch)
+[1720042398] encode_image_with_clip: image embedding created: 576 tokens
+[1720042398] 
+encode_image_with_clip: image encoded in    67.16 ms by CLIP (    0.12 ms per image patch)
+[1720042400] encode_image_with_clip: image embedding created: 576 tokens
+[1720042400] 
+encode_image_with_clip: image encoded in    67.69 ms by CLIP (    0.12 ms per image patch)
+[1720042402] encode_image_with_clip: image embedding created: 576 tokens
+[1720042402] 
+encode_image_with_clip: image encoded in    67.15 ms by CLIP (    0.12 ms per image patch)
+[1720042404] encode_image_with_clip: image embedding created: 576 tokens
+[1720042404] 
+encode_image_with_clip: image encoded in    67.90 ms by CLIP (    0.12 ms per image patch)
+[1720042407] encode_image_with_clip: image embedding created: 576 tokens
+[1720042407] 
+encode_image_with_clip: image encoded in    66.33 ms by CLIP (    0.12 ms per image patch)
+[1720042429] encode_image_with_clip: image embedding created: 576 tokens
+[1720042429] 
+encode_image_with_clip: image encoded in    65.55 ms by CLIP (    0.11 ms per image patch)
+[1720042432] encode_image_with_clip: image embedding created: 576 tokens
+[1720042432] 
+encode_image_with_clip: image encoded in    69.44 ms by CLIP (    0.12 ms per image patch)
+[1720042434] encode_image_with_clip: image embedding created: 576 tokens
+[1720042434] 
+encode_image_with_clip: image encoded in    66.80 ms by CLIP (    0.12 ms per image patch)
+[1720042436] encode_image_with_clip: image embedding created: 576 tokens
+[1720042436] 
+encode_image_with_clip: image encoded in    69.83 ms by CLIP (    0.12 ms per image patch)
+[1720042438] encode_image_with_clip: image embedding created: 576 tokens
+[1720042438] 
+encode_image_with_clip: image encoded in    66.68 ms by CLIP (    0.12 ms per image patch)
+[1720042443] encode_image_with_clip: image embedding created: 576 tokens
+[1720042443] 
+encode_image_with_clip: image encoded in    65.04 ms by CLIP (    0.11 ms per image patch)
+[1720042447] encode_image_with_clip: image embedding created: 576 tokens
+[1720042447] 
+encode_image_with_clip: image encoded in    65.59 ms by CLIP (    0.11 ms per image patch)
+[1720042451] encode_image_with_clip: image embedding created: 576 tokens
+[1720042451] 
+encode_image_with_clip: image encoded in    65.13 ms by CLIP (    0.11 ms per image patch)
+[1720042453] encode_image_with_clip: image embedding created: 576 tokens
+[1720042454] 
+encode_image_with_clip: image encoded in    67.32 ms by CLIP (    0.12 ms per image patch)
+[1720042458] encode_image_with_clip: image embedding created: 576 tokens
+[1720042458] 
+encode_image_with_clip: image encoded in    66.57 ms by CLIP (    0.12 ms per image patch)
+[1720042461] encode_image_with_clip: image embedding created: 576 tokens
+[1720042461] 
+encode_image_with_clip: image encoded in    68.81 ms by CLIP (    0.12 ms per image patch)
+[1720042464] encode_image_with_clip: image embedding created: 576 tokens
+[1720042464] 
+encode_image_with_clip: image encoded in    65.53 ms by CLIP (    0.11 ms per image patch)
+[1720042467] encode_image_with_clip: image embedding created: 576 tokens
+[1720042467] 
+encode_image_with_clip: image encoded in    65.13 ms by CLIP (    0.11 ms per image patch)
+[1720042472] encode_image_with_clip: image embedding created: 576 tokens
+[1720042472] 
+encode_image_with_clip: image encoded in    66.04 ms by CLIP (    0.11 ms per image patch)
+[1720042476] encode_image_with_clip: image embedding created: 576 tokens
+[1720042476] 
+encode_image_with_clip: image encoded in    63.98 ms by CLIP (    0.11 ms per image patch)
+[1720042480] encode_image_with_clip: image embedding created: 576 tokens
+[1720042480] 
+encode_image_with_clip: image encoded in    69.90 ms by CLIP (    0.12 ms per image patch)
+[1720042481] encode_image_with_clip: image embedding created: 576 tokens
+[1720042481] 
+encode_image_with_clip: image encoded in    64.94 ms by CLIP (    0.11 ms per image patch)
+[1720042485] encode_image_with_clip: image embedding created: 576 tokens
+[1720042485] 
+encode_image_with_clip: image encoded in    68.63 ms by CLIP (    0.12 ms per image patch)
+[1720042491] encode_image_with_clip: image embedding created: 576 tokens
+[1720042491] 
+encode_image_with_clip: image encoded in    66.94 ms by CLIP (    0.12 ms per image patch)
+[1720042495] encode_image_with_clip: image embedding created: 576 tokens
+[1720042495] 
+encode_image_with_clip: image encoded in    67.05 ms by CLIP (    0.12 ms per image patch)
+[1720042497] encode_image_with_clip: image embedding created: 576 tokens
+[1720042497] 
+encode_image_with_clip: image encoded in    69.10 ms by CLIP (    0.12 ms per image patch)
+[1720042501] encode_image_with_clip: image embedding created: 576 tokens
+[1720042501] 
+encode_image_with_clip: image encoded in    67.25 ms by CLIP (    0.12 ms per image patch)
+[1720042505] encode_image_with_clip: image embedding created: 576 tokens
+[1720042505] 
+encode_image_with_clip: image encoded in    66.06 ms by CLIP (    0.11 ms per image patch)
+[1720042509] encode_image_with_clip: image embedding created: 576 tokens
+[1720042509] 
+encode_image_with_clip: image encoded in    67.09 ms by CLIP (    0.12 ms per image patch)
+[1720042512] encode_image_with_clip: image embedding created: 576 tokens
+[1720042512] 
+encode_image_with_clip: image encoded in    70.74 ms by CLIP (    0.12 ms per image patch)
+[1720042514] encode_image_with_clip: image embedding created: 576 tokens
+[1720042514] 
+encode_image_with_clip: image encoded in    66.43 ms by CLIP (    0.12 ms per image patch)
+[1720042516] encode_image_with_clip: image embedding created: 576 tokens
+[1720042516] 
+encode_image_with_clip: image encoded in    67.35 ms by CLIP (    0.12 ms per image patch)
+[1720042518] encode_image_with_clip: image embedding created: 576 tokens
+[1720042518] 
+encode_image_with_clip: image encoded in    70.14 ms by CLIP (    0.12 ms per image patch)
+[1720042522] encode_image_with_clip: image embedding created: 576 tokens
+[1720042522] 
+encode_image_with_clip: image encoded in    66.79 ms by CLIP (    0.12 ms per image patch)
+[1720042526] encode_image_with_clip: image embedding created: 576 tokens
+[1720042526] 
+encode_image_with_clip: image encoded in    70.97 ms by CLIP (    0.12 ms per image patch)
+[1720042529] encode_image_with_clip: image embedding created: 576 tokens
+[1720042529] 
+encode_image_with_clip: image encoded in    67.70 ms by CLIP (    0.12 ms per image patch)
+[1720042532] encode_image_with_clip: image embedding created: 576 tokens
+[1720042532] 
+encode_image_with_clip: image encoded in    66.50 ms by CLIP (    0.12 ms per image patch)
+[1720042535] encode_image_with_clip: image embedding created: 576 tokens
+[1720042535] 
+encode_image_with_clip: image encoded in    67.12 ms by CLIP (    0.12 ms per image patch)
+[1720042538] encode_image_with_clip: image embedding created: 576 tokens
+[1720042538] 
+encode_image_with_clip: image encoded in    66.83 ms by CLIP (    0.12 ms per image patch)
+[1720042540] encode_image_with_clip: image embedding created: 576 tokens
+[1720042540] 
+encode_image_with_clip: image encoded in    70.39 ms by CLIP (    0.12 ms per image patch)
+[1720042545] encode_image_with_clip: image embedding created: 576 tokens
+[1720042545] 
+encode_image_with_clip: image encoded in    69.19 ms by CLIP (    0.12 ms per image patch)
+[1720042548] encode_image_with_clip: image embedding created: 576 tokens
+[1720042548] 
+encode_image_with_clip: image encoded in    70.73 ms by CLIP (    0.12 ms per image patch)
+[1720042550] encode_image_with_clip: image embedding created: 576 tokens
+[1720042550] 
+encode_image_with_clip: image encoded in    67.97 ms by CLIP (    0.12 ms per image patch)
+[1720042553] encode_image_with_clip: image embedding created: 576 tokens
+[1720042553] 
+encode_image_with_clip: image encoded in    68.32 ms by CLIP (    0.12 ms per image patch)
+[1720042555] encode_image_with_clip: image embedding created: 576 tokens
+[1720042555] 
+encode_image_with_clip: image encoded in    66.49 ms by CLIP (    0.12 ms per image patch)
+[1720042558] encode_image_with_clip: image embedding created: 576 tokens
+[1720042558] 
+encode_image_with_clip: image encoded in    67.19 ms by CLIP (    0.12 ms per image patch)
+[1720042561] encode_image_with_clip: image embedding created: 576 tokens
+[1720042561] 
+encode_image_with_clip: image encoded in    69.46 ms by CLIP (    0.12 ms per image patch)
+[1720042562] encode_image_with_clip: image embedding created: 576 tokens
+[1720042562] 
+encode_image_with_clip: image encoded in    71.23 ms by CLIP (    0.12 ms per image patch)
+[1720042565] encode_image_with_clip: image embedding created: 576 tokens
+[1720042565] 
+encode_image_with_clip: image encoded in    69.46 ms by CLIP (    0.12 ms per image patch)
+[1720042566] encode_image_with_clip: image embedding created: 576 tokens
+[1720042566] 
+encode_image_with_clip: image encoded in    67.36 ms by CLIP (    0.12 ms per image patch)
+[1720042568] encode_image_with_clip: image embedding created: 576 tokens
+[1720042568] 
+encode_image_with_clip: image encoded in    68.96 ms by CLIP (    0.12 ms per image patch)
+[1720042571] encode_image_with_clip: image embedding created: 576 tokens
+[1720042571] 
+encode_image_with_clip: image encoded in    66.68 ms by CLIP (    0.12 ms per image patch)
+[1720042577] encode_image_with_clip: image embedding created: 576 tokens
+[1720042577] 
+encode_image_with_clip: image encoded in    66.19 ms by CLIP (    0.11 ms per image patch)
+[1720042582] encode_image_with_clip: image embedding created: 576 tokens
+[1720042582] 
+encode_image_with_clip: image encoded in    68.25 ms by CLIP (    0.12 ms per image patch)
+[1720042584] encode_image_with_clip: image embedding created: 576 tokens
+[1720042584] 
+encode_image_with_clip: image encoded in    69.90 ms by CLIP (    0.12 ms per image patch)
+[1720042586] encode_image_with_clip: image embedding created: 576 tokens
+[1720042586] 
+encode_image_with_clip: image encoded in    67.72 ms by CLIP (    0.12 ms per image patch)
+[1720042590] encode_image_with_clip: image embedding created: 576 tokens
+[1720042590] 
+encode_image_with_clip: image encoded in    66.74 ms by CLIP (    0.12 ms per image patch)
+[1720042593] encode_image_with_clip: image embedding created: 576 tokens
+[1720042593] 
+encode_image_with_clip: image encoded in    67.44 ms by CLIP (    0.12 ms per image patch)
+[1720042596] encode_image_with_clip: image embedding created: 576 tokens
+[1720042596] 
+encode_image_with_clip: image encoded in    68.31 ms by CLIP (    0.12 ms per image patch)
+[1720042599] encode_image_with_clip: image embedding created: 576 tokens
+[1720042599] 
+encode_image_with_clip: image encoded in    67.07 ms by CLIP (    0.12 ms per image patch)
+[1720042601] encode_image_with_clip: image embedding created: 576 tokens
+[1720042601] 
+encode_image_with_clip: image encoded in    70.75 ms by CLIP (    0.12 ms per image patch)
+[1720042604] encode_image_with_clip: image embedding created: 576 tokens
+[1720042604] 
+encode_image_with_clip: image encoded in    69.91 ms by CLIP (    0.12 ms per image patch)
+[1720042606] encode_image_with_clip: image embedding created: 576 tokens
+[1720042606] 
+encode_image_with_clip: image encoded in    71.67 ms by CLIP (    0.12 ms per image patch)
+[1720042608] encode_image_with_clip: image embedding created: 576 tokens
+[1720042608] 
+encode_image_with_clip: image encoded in    69.23 ms by CLIP (    0.12 ms per image patch)
+[1720042612] encode_image_with_clip: image embedding created: 576 tokens
+[1720042612] 
+encode_image_with_clip: image encoded in    65.16 ms by CLIP (    0.11 ms per image patch)
+[1720042617] encode_image_with_clip: image embedding created: 576 tokens
+[1720042617] 
+encode_image_with_clip: image encoded in    67.97 ms by CLIP (    0.12 ms per image patch)
+[1720042623] encode_image_with_clip: image embedding created: 576 tokens
+[1720042623] 
+encode_image_with_clip: image encoded in    66.51 ms by CLIP (    0.12 ms per image patch)
+[1720042627] encode_image_with_clip: image embedding created: 576 tokens
+[1720042627] 
+encode_image_with_clip: image encoded in    66.75 ms by CLIP (    0.12 ms per image patch)
+[1720042634] encode_image_with_clip: image embedding created: 576 tokens
+[1720042634] 
+encode_image_with_clip: image encoded in    69.82 ms by CLIP (    0.12 ms per image patch)
+[1720042638] encode_image_with_clip: image embedding created: 576 tokens
+[1720042638] 
+encode_image_with_clip: image encoded in    67.88 ms by CLIP (    0.12 ms per image patch)
+[1720042640] encode_image_with_clip: image embedding created: 576 tokens
+[1720042640] 
+encode_image_with_clip: image encoded in    68.06 ms by CLIP (    0.12 ms per image patch)
+[1720042644] encode_image_with_clip: image embedding created: 576 tokens
+[1720042644] 
+encode_image_with_clip: image encoded in    66.80 ms by CLIP (    0.12 ms per image patch)
+[1720042646] encode_image_with_clip: image embedding created: 576 tokens
+[1720042646] 
+encode_image_with_clip: image encoded in    68.17 ms by CLIP (    0.12 ms per image patch)
+[1720042649] encode_image_with_clip: image embedding created: 576 tokens
+[1720042649] 
+encode_image_with_clip: image encoded in    68.30 ms by CLIP (    0.12 ms per image patch)
+[1720042651] encode_image_with_clip: image embedding created: 576 tokens
+[1720042651] 
+encode_image_with_clip: image encoded in    68.60 ms by CLIP (    0.12 ms per image patch)
+[1720042653] encode_image_with_clip: image embedding created: 576 tokens
+[1720042653] 
+encode_image_with_clip: image encoded in    69.12 ms by CLIP (    0.12 ms per image patch)
+[1720042655] encode_image_with_clip: image embedding created: 576 tokens
+[1720042655] 
+encode_image_with_clip: image encoded in    69.06 ms by CLIP (    0.12 ms per image patch)
+[1720042656] encode_image_with_clip: image embedding created: 576 tokens
+[1720042656] 
+encode_image_with_clip: image encoded in    67.78 ms by CLIP (    0.12 ms per image patch)
+[1720042660] encode_image_with_clip: image embedding created: 576 tokens
+[1720042660] 
+encode_image_with_clip: image encoded in    68.45 ms by CLIP (    0.12 ms per image patch)
+[1720042663] encode_image_with_clip: image embedding created: 576 tokens
+[1720042663] 
+encode_image_with_clip: image encoded in    70.27 ms by CLIP (    0.12 ms per image patch)
+[1720042665] encode_image_with_clip: image embedding created: 576 tokens
+[1720042665] 
+encode_image_with_clip: image encoded in    70.26 ms by CLIP (    0.12 ms per image patch)
+[1720042667] encode_image_with_clip: image embedding created: 576 tokens
+[1720042667] 
+encode_image_with_clip: image encoded in    69.49 ms by CLIP (    0.12 ms per image patch)
+[1720042669] encode_image_with_clip: image embedding created: 576 tokens
+[1720042669] 
+encode_image_with_clip: image encoded in    69.34 ms by CLIP (    0.12 ms per image patch)
+[1720042672] encode_image_with_clip: image embedding created: 576 tokens
+[1720042672] 
+encode_image_with_clip: image encoded in    68.41 ms by CLIP (    0.12 ms per image patch)
+[1720042675] encode_image_with_clip: image embedding created: 576 tokens
+[1720042675] 
+encode_image_with_clip: image encoded in    69.47 ms by CLIP (    0.12 ms per image patch)
+[1720042677] encode_image_with_clip: image embedding created: 576 tokens
+[1720042677] 
+encode_image_with_clip: image encoded in    69.72 ms by CLIP (    0.12 ms per image patch)
+[1720042680] encode_image_with_clip: image embedding created: 576 tokens
+[1720042680] 
+encode_image_with_clip: image encoded in    67.77 ms by CLIP (    0.12 ms per image patch)
+[1720042683] encode_image_with_clip: image embedding created: 576 tokens
+[1720042683] 
+encode_image_with_clip: image encoded in    68.39 ms by CLIP (    0.12 ms per image patch)
+[1720042685] encode_image_with_clip: image embedding created: 576 tokens
+[1720042685] 
+encode_image_with_clip: image encoded in    67.19 ms by CLIP (    0.12 ms per image patch)
+[1720042687] encode_image_with_clip: image embedding created: 576 tokens
+[1720042687] 
+encode_image_with_clip: image encoded in    68.72 ms by CLIP (    0.12 ms per image patch)
+[1720042689] encode_image_with_clip: image embedding created: 576 tokens
+[1720042689] 
+encode_image_with_clip: image encoded in    69.10 ms by CLIP (    0.12 ms per image patch)
+[1720042691] encode_image_with_clip: image embedding created: 576 tokens
+[1720042691] 
+encode_image_with_clip: image encoded in    67.63 ms by CLIP (    0.12 ms per image patch)
+[1720042693] encode_image_with_clip: image embedding created: 576 tokens
+[1720042693] 
+encode_image_with_clip: image encoded in    67.36 ms by CLIP (    0.12 ms per image patch)
+[1720042695] encode_image_with_clip: image embedding created: 576 tokens
+[1720042695] 
+encode_image_with_clip: image encoded in    69.71 ms by CLIP (    0.12 ms per image patch)
+[1720042697] encode_image_with_clip: image embedding created: 576 tokens
+[1720042697] 
+encode_image_with_clip: image encoded in    70.13 ms by CLIP (    0.12 ms per image patch)
+[1720042699] encode_image_with_clip: image embedding created: 576 tokens
+[1720042699] 
+encode_image_with_clip: image encoded in    68.57 ms by CLIP (    0.12 ms per image patch)
+[1720042701] encode_image_with_clip: image embedding created: 576 tokens
+[1720042701] 
+encode_image_with_clip: image encoded in    67.92 ms by CLIP (    0.12 ms per image patch)
+[1720042703] encode_image_with_clip: image embedding created: 576 tokens
+[1720042703] 
+encode_image_with_clip: image encoded in    71.31 ms by CLIP (    0.12 ms per image patch)
+[1720042705] encode_image_with_clip: image embedding created: 576 tokens
+[1720042705] 
+encode_image_with_clip: image encoded in    68.74 ms by CLIP (    0.12 ms per image patch)
+[1720042708] encode_image_with_clip: image embedding created: 576 tokens
+[1720042708] 
+encode_image_with_clip: image encoded in    68.20 ms by CLIP (    0.12 ms per image patch)
+[1720042710] encode_image_with_clip: image embedding created: 576 tokens
+[1720042710] 
+encode_image_with_clip: image encoded in    68.67 ms by CLIP (    0.12 ms per image patch)
+[1720043371] encode_image_with_clip: image embedding created: 576 tokens
+[1720043371] 
+encode_image_with_clip: image encoded in   102.58 ms by CLIP (    0.18 ms per image patch)
+[1720043374] encode_image_with_clip: image embedding created: 576 tokens
+[1720043374] 
+encode_image_with_clip: image encoded in    66.36 ms by CLIP (    0.12 ms per image patch)
+[1720043377] encode_image_with_clip: image embedding created: 576 tokens
+[1720043377] 
+encode_image_with_clip: image encoded in    68.24 ms by CLIP (    0.12 ms per image patch)
+[1720043379] encode_image_with_clip: image embedding created: 576 tokens
+[1720043379] 
+encode_image_with_clip: image encoded in    68.98 ms by CLIP (    0.12 ms per image patch)
+[1720043381] encode_image_with_clip: image embedding created: 576 tokens
+[1720043381] 
+encode_image_with_clip: image encoded in    66.82 ms by CLIP (    0.12 ms per image patch)
+[1720043383] encode_image_with_clip: image embedding created: 576 tokens
+[1720043383] 
+encode_image_with_clip: image encoded in    68.43 ms by CLIP (    0.12 ms per image patch)
+[1720043387] encode_image_with_clip: image embedding created: 576 tokens
+[1720043387] 
+encode_image_with_clip: image encoded in    69.01 ms by CLIP (    0.12 ms per image patch)
+[1720043389] encode_image_with_clip: image embedding created: 576 tokens
+[1720043389] 
+encode_image_with_clip: image encoded in    66.04 ms by CLIP (    0.11 ms per image patch)
+[1720043392] encode_image_with_clip: image embedding created: 576 tokens
+[1720043392] 
+encode_image_with_clip: image encoded in    68.81 ms by CLIP (    0.12 ms per image patch)
+[1720043395] encode_image_with_clip: image embedding created: 576 tokens
+[1720043395] 
+encode_image_with_clip: image encoded in    67.70 ms by CLIP (    0.12 ms per image patch)
+[1720043399] encode_image_with_clip: image embedding created: 576 tokens
+[1720043399] 
+encode_image_with_clip: image encoded in    68.31 ms by CLIP (    0.12 ms per image patch)
+[1720043401] encode_image_with_clip: image embedding created: 576 tokens
+[1720043401] 
+encode_image_with_clip: image encoded in    64.88 ms by CLIP (    0.11 ms per image patch)
+[1720043404] encode_image_with_clip: image embedding created: 576 tokens
+[1720043404] 
+encode_image_with_clip: image encoded in    67.67 ms by CLIP (    0.12 ms per image patch)
+[1720043406] encode_image_with_clip: image embedding created: 576 tokens
+[1720043406] 
+encode_image_with_clip: image encoded in    67.52 ms by CLIP (    0.12 ms per image patch)
+[1720043409] encode_image_with_clip: image embedding created: 576 tokens
+[1720043409] 
+encode_image_with_clip: image encoded in    69.30 ms by CLIP (    0.12 ms per image patch)
+[1720043412] encode_image_with_clip: image embedding created: 576 tokens
+[1720043412] 
+encode_image_with_clip: image encoded in    67.77 ms by CLIP (    0.12 ms per image patch)
+[1720043417] encode_image_with_clip: image embedding created: 576 tokens
+[1720043417] 
+encode_image_with_clip: image encoded in    69.85 ms by CLIP (    0.12 ms per image patch)
+[1720043420] encode_image_with_clip: image embedding created: 576 tokens
+[1720043420] 
+encode_image_with_clip: image encoded in    68.39 ms by CLIP (    0.12 ms per image patch)
+[1720043424] encode_image_with_clip: image embedding created: 576 tokens
+[1720043424] 
+encode_image_with_clip: image encoded in    69.14 ms by CLIP (    0.12 ms per image patch)
+[1720043427] encode_image_with_clip: image embedding created: 576 tokens
+[1720043427] 
+encode_image_with_clip: image encoded in    67.70 ms by CLIP (    0.12 ms per image patch)
+[1720043431] encode_image_with_clip: image embedding created: 576 tokens
+[1720043431] 
+encode_image_with_clip: image encoded in    66.71 ms by CLIP (    0.12 ms per image patch)
+[1720043435] encode_image_with_clip: image embedding created: 576 tokens
+[1720043435] 
+encode_image_with_clip: image encoded in    66.98 ms by CLIP (    0.12 ms per image patch)
+[1720043439] encode_image_with_clip: image embedding created: 576 tokens
+[1720043439] 
+encode_image_with_clip: image encoded in    67.45 ms by CLIP (    0.12 ms per image patch)
+[1720043444] encode_image_with_clip: image embedding created: 576 tokens
+[1720043444] 
+encode_image_with_clip: image encoded in    68.13 ms by CLIP (    0.12 ms per image patch)
+[1720043447] encode_image_with_clip: image embedding created: 576 tokens
+[1720043447] 
+encode_image_with_clip: image encoded in    68.20 ms by CLIP (    0.12 ms per image patch)
+[1720043450] encode_image_with_clip: image embedding created: 576 tokens
+[1720043450] 
+encode_image_with_clip: image encoded in    68.95 ms by CLIP (    0.12 ms per image patch)
+[1720043455] encode_image_with_clip: image embedding created: 576 tokens
+[1720043455] 
+encode_image_with_clip: image encoded in    69.64 ms by CLIP (    0.12 ms per image patch)
+[1720043459] encode_image_with_clip: image embedding created: 576 tokens
+[1720043459] 
+encode_image_with_clip: image encoded in    68.01 ms by CLIP (    0.12 ms per image patch)
+[1720043463] encode_image_with_clip: image embedding created: 576 tokens
+[1720043463] 
+encode_image_with_clip: image encoded in    67.22 ms by CLIP (    0.12 ms per image patch)
+[1720043467] encode_image_with_clip: image embedding created: 576 tokens
+[1720043467] 
+encode_image_with_clip: image encoded in    70.11 ms by CLIP (    0.12 ms per image patch)
+[1720043474] encode_image_with_clip: image embedding created: 576 tokens
+[1720043474] 
+encode_image_with_clip: image encoded in    69.07 ms by CLIP (    0.12 ms per image patch)
+[1720043477] encode_image_with_clip: image embedding created: 576 tokens
+[1720043477] 
+encode_image_with_clip: image encoded in    71.36 ms by CLIP (    0.12 ms per image patch)
+[1720043481] encode_image_with_clip: image embedding created: 576 tokens
+[1720043481] 
+encode_image_with_clip: image encoded in    70.22 ms by CLIP (    0.12 ms per image patch)
+[1720043485] encode_image_with_clip: image embedding created: 576 tokens
+[1720043485] 
+encode_image_with_clip: image encoded in    67.67 ms by CLIP (    0.12 ms per image patch)
+[1720043677] encode_image_with_clip: image embedding created: 576 tokens
+[1720043677] 
+encode_image_with_clip: image encoded in   112.08 ms by CLIP (    0.19 ms per image patch)
+[1720043680] encode_image_with_clip: image embedding created: 576 tokens
+[1720043680] 
+encode_image_with_clip: image encoded in    66.93 ms by CLIP (    0.12 ms per image patch)
+[1720043682] encode_image_with_clip: image embedding created: 576 tokens
+[1720043682] 
+encode_image_with_clip: image encoded in    66.35 ms by CLIP (    0.12 ms per image patch)
+[1720043684] encode_image_with_clip: image embedding created: 576 tokens
+[1720043684] 
+encode_image_with_clip: image encoded in    64.17 ms by CLIP (    0.11 ms per image patch)
+[1720043689] encode_image_with_clip: image embedding created: 576 tokens
+[1720043689] 
+encode_image_with_clip: image encoded in    65.20 ms by CLIP (    0.11 ms per image patch)
+[1720043693] encode_image_with_clip: image embedding created: 576 tokens
+[1720043693] 
+encode_image_with_clip: image encoded in    66.21 ms by CLIP (    0.11 ms per image patch)
+[1720043696] encode_image_with_clip: image embedding created: 576 tokens
+[1720043696] 
+encode_image_with_clip: image encoded in    64.69 ms by CLIP (    0.11 ms per image patch)
+[1720043700] encode_image_with_clip: image embedding created: 576 tokens
+[1720043700] 
+encode_image_with_clip: image encoded in    68.75 ms by CLIP (    0.12 ms per image patch)
+[1720043702] encode_image_with_clip: image embedding created: 576 tokens
+[1720043702] 
+encode_image_with_clip: image encoded in    64.72 ms by CLIP (    0.11 ms per image patch)
+[1720043704] encode_image_with_clip: image embedding created: 576 tokens
+[1720043704] 
+encode_image_with_clip: image encoded in    70.26 ms by CLIP (    0.12 ms per image patch)
+[1720043706] encode_image_with_clip: image embedding created: 576 tokens
+[1720043706] 
+encode_image_with_clip: image encoded in    64.44 ms by CLIP (    0.11 ms per image patch)
+[1720043710] encode_image_with_clip: image embedding created: 576 tokens
+[1720043710] 
+encode_image_with_clip: image encoded in    67.88 ms by CLIP (    0.12 ms per image patch)
+[1720043713] encode_image_with_clip: image embedding created: 576 tokens
+[1720043713] 
+encode_image_with_clip: image encoded in    67.64 ms by CLIP (    0.12 ms per image patch)
+[1720043715] encode_image_with_clip: image embedding created: 576 tokens
+[1720043715] 
+encode_image_with_clip: image encoded in    69.83 ms by CLIP (    0.12 ms per image patch)
+[1720043719] encode_image_with_clip: image embedding created: 576 tokens
+[1720043719] 
+encode_image_with_clip: image encoded in    65.75 ms by CLIP (    0.11 ms per image patch)
+[1720043723] encode_image_with_clip: image embedding created: 576 tokens
+[1720043723] 
+encode_image_with_clip: image encoded in    69.13 ms by CLIP (    0.12 ms per image patch)
+[1720043724] encode_image_with_clip: image embedding created: 576 tokens
+[1720043724] 
+encode_image_with_clip: image encoded in    65.45 ms by CLIP (    0.11 ms per image patch)
+[1720043729] encode_image_with_clip: image embedding created: 576 tokens
+[1720043729] 
+encode_image_with_clip: image encoded in    66.64 ms by CLIP (    0.12 ms per image patch)
+[1720043733] encode_image_with_clip: image embedding created: 576 tokens
+[1720043733] 
+encode_image_with_clip: image encoded in    68.53 ms by CLIP (    0.12 ms per image patch)
+[1720043736] encode_image_with_clip: image embedding created: 576 tokens
+[1720043736] 
+encode_image_with_clip: image encoded in    65.91 ms by CLIP (    0.11 ms per image patch)
+[1720043739] encode_image_with_clip: image embedding created: 576 tokens
+[1720043739] 
+encode_image_with_clip: image encoded in    66.65 ms by CLIP (    0.12 ms per image patch)
+[1720043743] encode_image_with_clip: image embedding created: 576 tokens
+[1720043743] 
+encode_image_with_clip: image encoded in    68.57 ms by CLIP (    0.12 ms per image patch)
+[1720043744] encode_image_with_clip: image embedding created: 576 tokens
+[1720043744] 
+encode_image_with_clip: image encoded in    65.86 ms by CLIP (    0.11 ms per image patch)
+[1720043749] encode_image_with_clip: image embedding created: 576 tokens
+[1720043749] 
+encode_image_with_clip: image encoded in    66.48 ms by CLIP (    0.12 ms per image patch)
+[1720043753] encode_image_with_clip: image embedding created: 576 tokens
+[1720043753] 
+encode_image_with_clip: image encoded in    68.35 ms by CLIP (    0.12 ms per image patch)
+[1720043757] encode_image_with_clip: image embedding created: 576 tokens
+[1720043757] 
+encode_image_with_clip: image encoded in    67.92 ms by CLIP (    0.12 ms per image patch)
+[1720043759] encode_image_with_clip: image embedding created: 576 tokens
+[1720043759] 
+encode_image_with_clip: image encoded in    67.05 ms by CLIP (    0.12 ms per image patch)
+[1720043762] encode_image_with_clip: image embedding created: 576 tokens
+[1720043762] 
+encode_image_with_clip: image encoded in    65.81 ms by CLIP (    0.11 ms per image patch)
+[1720043767] encode_image_with_clip: image embedding created: 576 tokens
+[1720043767] 
+encode_image_with_clip: image encoded in    66.98 ms by CLIP (    0.12 ms per image patch)
+[1720043771] encode_image_with_clip: image embedding created: 576 tokens
+[1720043771] 
+encode_image_with_clip: image encoded in    65.73 ms by CLIP (    0.11 ms per image patch)
+[1720043775] encode_image_with_clip: image embedding created: 576 tokens
+[1720043775] 
+encode_image_with_clip: image encoded in    69.13 ms by CLIP (    0.12 ms per image patch)
+[1720043778] encode_image_with_clip: image embedding created: 576 tokens
+[1720043778] 
+encode_image_with_clip: image encoded in    66.83 ms by CLIP (    0.12 ms per image patch)
+[1720043782] encode_image_with_clip: image embedding created: 576 tokens
+[1720043782] 
+encode_image_with_clip: image encoded in    66.36 ms by CLIP (    0.12 ms per image patch)
+[1720043785] encode_image_with_clip: image embedding created: 576 tokens
+[1720043785] 
+encode_image_with_clip: image encoded in    69.32 ms by CLIP (    0.12 ms per image patch)
+[1720043788] encode_image_with_clip: image embedding created: 576 tokens
+[1720043788] 
+encode_image_with_clip: image encoded in    68.76 ms by CLIP (    0.12 ms per image patch)
+[1720043792] encode_image_with_clip: image embedding created: 576 tokens
+[1720043792] 
+encode_image_with_clip: image encoded in    67.40 ms by CLIP (    0.12 ms per image patch)
+[1720043794] encode_image_with_clip: image embedding created: 576 tokens
+[1720043794] 
+encode_image_with_clip: image encoded in    67.36 ms by CLIP (    0.12 ms per image patch)
+[1720043798] encode_image_with_clip: image embedding created: 576 tokens
+[1720043798] 
+encode_image_with_clip: image encoded in    66.28 ms by CLIP (    0.12 ms per image patch)
+[1720043802] encode_image_with_clip: image embedding created: 576 tokens
+[1720043802] 
+encode_image_with_clip: image encoded in    66.74 ms by CLIP (    0.12 ms per image patch)
+[1720043805] encode_image_with_clip: image embedding created: 576 tokens
+[1720043805] 
+encode_image_with_clip: image encoded in    68.49 ms by CLIP (    0.12 ms per image patch)
+[1720043807] encode_image_with_clip: image embedding created: 576 tokens
+[1720043807] 
+encode_image_with_clip: image encoded in    67.35 ms by CLIP (    0.12 ms per image patch)
+[1720043811] encode_image_with_clip: image embedding created: 576 tokens
+[1720043811] 
+encode_image_with_clip: image encoded in    70.10 ms by CLIP (    0.12 ms per image patch)
+[1720043814] encode_image_with_clip: image embedding created: 576 tokens
+[1720043814] 
+encode_image_with_clip: image encoded in    68.66 ms by CLIP (    0.12 ms per image patch)
+[1720043818] encode_image_with_clip: image embedding created: 576 tokens
+[1720043818] 
+encode_image_with_clip: image encoded in    67.70 ms by CLIP (    0.12 ms per image patch)
