@@ -56,7 +56,6 @@ class HFEmbeddings(HuggingFaceEmbeddings):
 from typing import Any, Dict, List, Optional
 
 from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
 
 
 class LlamaCppEmbeddings(BaseModel, Embeddings):
@@ -117,7 +116,7 @@ class LlamaCppEmbeddings(BaseModel, Embeddings):
 
         extra = Extra.forbid
 
-    @root_validator()
+    @root_validator(allow_reuse=True)
     def validate_environment(cls, values: Dict) -> Dict:
         """Validate that llama-cpp-python library is installed."""
         model_path = values["model_path"]
@@ -181,6 +180,8 @@ class LlamaCppEmbeddings(BaseModel, Embeddings):
         """
         task = 'Given a question, retrieve passages that answer the question'
         prompt = f"Instruct: {task}\nQuery: "
+        if type(text) == dict:
+            text = text['input']
         embedding = self.client.embed(prompt+text)[-1]
         return list(map(float, embedding))
 
@@ -404,7 +405,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
         extra = Extra.forbid
         allow_population_by_field_name = True
 
-    @root_validator(pre=True)
+    @root_validator(pre=True, allow_reuse=True)
     def build_extra(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """Build extra kwargs from additional params that were passed in."""
         all_required_field_names = get_pydantic_field_names(cls)
@@ -430,7 +431,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
         values["model_kwargs"] = extra
         return values
 
-    @root_validator()
+    @root_validator(allow_reuse=True)
     def validate_environment(cls, values: Dict) -> Dict:
         """Validate that api key and python package exists in environment."""
         values["openai_api_key"] = get_from_dict_or_env(

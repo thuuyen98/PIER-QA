@@ -3,7 +3,7 @@ from matplotlib.patches import Rectangle
 import fitz
 from pathlib import Path
 from itertools import islice
-from categorizer import PDFTextBlockCategorizer
+from Preprocessing.categorizer import PDFTextBlockCategorizer
 import os
 from pprint import pprint
 from tqdm import tqdm
@@ -72,7 +72,7 @@ class PDFExtractor:
 
                 # print(f"=== End Page {page_cnt}: {len(blocks)} blocks ===\n")
             categorizer = PDFTextBlockCategorizer(categorize_vectors)
-            categorizer.run(self.get_min_sample_param(len(page_group)))
+            categorizer.run(min_samples=self.get_min_sample_param(len(page_group)))
             if visualize:
                 fig, ax = plt.subplots()
                 colors = ["b", "r", "g", "c", "m", "y", "k"]

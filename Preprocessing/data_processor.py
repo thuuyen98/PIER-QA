@@ -4,21 +4,24 @@ from llama_cpp.llama_chat_format import Llava15ChatHandler
 import os, glob
 from os.path import join
 import base64
-from pdf_parser import PDFExtractor
+from Preprocessing.pdf_parser import PDFExtractor
 from pathlib import Path
-# MODEL_PATH = "../Model/bunny_q4_k_m.gguf"
-# MMPROJ_PATH = "../Model/bunny_mmproj.gguf"
-MODEL_PATH = "../Model/ggml-model-q5_k.gguf"
-MMPROJ_PATH = "../Model/mmproj-model-f16.gguf"
+import shutil
+from tqdm import tqdm
+import hashlib
+
+
+MODEL_PATH = "Model/ggml-model-q5_k.gguf"
+MMPROJ_PATH = "Model/mmproj-model-f16.gguf"
 PROMPT = "Describe the image in detail. Extract important text from graphs, diagrams, or tables if they appear in the image, and be specific about it."
 
 chat_handler = Llava15ChatHandler(clip_model_path=MMPROJ_PATH)
 llm = Llama(
-  model_path=MODEL_PATH,
-  chat_handler=chat_handler,
-  n_ctx=2048, # n_ctx should be increased to accommodate the image embedding
+    model_path=MODEL_PATH,
+    chat_handler=chat_handler,
+    n_ctx=2048, # n_ctx should be increased to accommodate the image embedding
     n_gpu_layers=9999,
-verbose=False
+    verbose=False
 )
 
 def image_to_base64_data_uri(file_path):
@@ -58,7 +61,7 @@ def image_to_caption(image_path):
                 ]
             }
         ],
-        stop=["<|eot_id|>", '<|end_of_text|>'],
+        stop=["<|eot_id|>", '<|end_of_text|>', '<|im_end|>'],
         temperature=0,
         # presence_penalty=0.7,
         # frequency_penalty=0.7,
@@ -66,62 +69,25 @@ def image_to_caption(image_path):
         # top_k=20,
     )
     response = response['choices'][0]['message']['content'].replace('\n', ' ').strip()
-    # print('\n', image_path)
-    # print(response, '\n')
+    print('\n', image_path)
+    print(response, '\n')
     return response
-# import re
-# import json
-# with open("./data/EN_HFT_Protokollbeschreibung_VFL CANopen_2021-10-25_D_caption.md", 'r') as file:
-#     content = file.read()
-# def table_to_dict_list(table_text):
-#     # Split table text into lines
-#     lines = table_text.strip().split('\n')
-
-#     # Initialize list to hold rows
-#     rows = []
-
-#     # Iterate over each line
-#     for line in lines:
-#         # Split line into cells, ignoring empty cells
-#         cells = [cell.strip() for cell in line.split('|') if cell.strip()]
-
-#         # Ensure cells are in key-value pair format
-#         if len(cells) >= 2:
-#             row_dict = {}
-#             for i in range(0, len(cells), 2):
-#                 key = cells[i].strip(':')  # Remove any trailing colon from keys
-#                 if i + 1 < len(cells):  # Check if there's a corresponding value
-#                     value = cells[i + 1].strip()
-#                     row_dict[key] = value
-#             rows.append(row_dict)
-
-#     return rows
-
-
-# # Regex pattern to match tables in markdown
-# table_pattern = re.compile(r'(\|.*?\|(?:\n\|[-:]+.*?)+\n(?:\|.*?\|(?:\n|$))+)', re.DOTALL)
-
-# # Find all tables
-# tables = table_pattern.findall(content)
-# print(tables[0])
-# # Replace each table with its dictionary representation
-# for table in tables:
-#     table_dict_list = table_to_dict_list(table)
-#     table_dict_str = json.dumps(table_dict_list, indent=4)
-#     content = content.replace(table, f'```\n{table_dict_str}\n```')
     
-from tqdm import tqdm
-import hashlib
-def pipeline(pdf_dir, out_dir): # test
-    pdf_ls = glob.glob(join(pdf_dir, "*.pdf")) # test/a.pdf
-    header_removed_path = join(pdf_dir, 'header_footer_remove') # test/header_footer_remove
-    md_dir = join(header_removed_path, 'markdown') # test/header_footer_remove/markdown
+
+def pipeline(pdf_dir, out_dir): 
+    all_files = glob.glob(join(pdf_dir, "*.*"))
+    for p in all_files:
+        if not p.endswith('.pdf'):
+            shutil.copyfile(p, join(out_dir, p.split('/')[-1]))
+    pdf_ls = glob.glob(join(pdf_dir, "*.pdf")) 
+    header_removed_path = join(pdf_dir, 'header_footer_remove') 
+    md_dir = join(header_removed_path, 'markdown') 
     if not os.path.exists(header_removed_path):
         os.makedirs(header_removed_path)
     for pdf_file in pdf_ls:   
-        root, file_name = os.path.split(pdf_file) # test, a.pdf
+        root, file_name = os.path.split(pdf_file) 
         print('# PROCESSING', file_name)
-        removed_file_path = join(header_removed_path, file_name) # test/header_footer_remove/a.pdf
+        removed_file_path = join(header_removed_path, file_name) 
         if not Path(removed_file_path).is_file():
             print('### Remove headers and footers', removed_file_path)
             pdf_extractor = PDFExtractor(pdf_file, removed_file_path)
@@ -130,12 +96,12 @@ def pipeline(pdf_dir, out_dir): # test
             print('### Skip removing headers and footers')
         
         base_name = file_name.rstrip('.pdf')
-        file_hash = str(int(hashlib.sha1(base_name.encode("utf-8")).hexdigest(), 16) % (10 ** 4))
+        file_hash = str(int(hashlib.sha1(pdf_file.encode("utf-8")).hexdigest(), 16) % (10 ** 5))
         md_file = join(md_dir, file_hash, base_name, base_name + '.md')
         
         if not Path(md_file).is_file():
             print('### Convert to Markdown', md_file)
-            extract_data(removed_file_path, join(md_dir, file_hash)) # test/header_footer_remove/a.pdf -> test/header_footer_remove/markdown/2412/a/a.md ... image.png
+            extract_data(removed_file_path, join(md_dir, file_hash)) 
         else:
             print('### Skip converting to Markdown')
 
@@ -155,8 +121,6 @@ def pipeline(pdf_dir, out_dir): # test
         else:
             print('### Skip image captionization')
         print('### Done!')
-
-
-pipeline('test2', '/root/data/uyen/RAG-PDF/Database_new/Public/Files')        
+     
                  
         
