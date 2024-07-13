@@ -28,7 +28,7 @@
     cd marker
     pip uninstall marker-pdf && pip install -e .
   ```
-### (Optional) Deploy an open-source model with llama.cpp
+### Deploy an open-source model with llama.cpp (not require if only use OpenAI models)
 1. Clone [llama.cpp](https://github.com/ggerganov/llama.cpp) and follow its installation instruction
 2. Download a GGUF model. For example, to download our **Llama3-70B-RAG** (Q4_K_M quantized):
     ```
@@ -58,8 +58,8 @@
  ```
 
 ## Purpose
-The aim is to provide a simple app implementing a RAG function on specific document. It provides a simple Chroma database abstraction layer combined with an simple chat agent to perform RAG
-
+This work is based on https://github.com/0xMatthieu/Simple_RAG_app/
+The aim is to provide a simple app implementing a RAG function on specific document. It provides a simple database abstraction layer combined with an simple chat agent to perform RAG
 ## Structure
 ```
 ├── src
@@ -68,20 +68,20 @@ The aim is to provide a simple app implementing a RAG function on specific docum
 │   │── Preprocessing      
 │   │── Database
 │   │   ├── Private
-│   │   │   ├── Chroma_DB
+│   │   │   ├── preprocessing_output
 │   │   │   ├── Files
 │   │   ├── Public
-│   │   │   ├── Chroma_DB
+│   │   │   ├── preprocessing_output
 │   │   │   ├── Files
 │   │   ├── Raptor
-│   │   │   ├── Chroma_DB
+│   │   │   ├── preprocessing_output
 │   │   │   ├── Files
 ```
 ## Adding a new document
 New document can be added using the following methods
 - Adding the document to \Files folder
 - Calling the function `add_missing_document_to_database` or using the button *Add missing files to DB* in the streamlit UI
-
+Note: adding new document might take a lot of time due to the preprocessing
 
 ## Working with multiple database
 Defaut option is using only data from public database

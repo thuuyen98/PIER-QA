@@ -29,17 +29,29 @@ def write_files_trained_on():
     files_trained_on_expander = st.expander(label='App was trained on following files:')
     files = st.session_state.chat.vectordb.list_all_files()
     files_2 = st.session_state.chat.vectordb_private.list_all_files()
+    files_3 = st.session_state.chat.vectordb_raptor.list_all_files()
     
     with files_trained_on_expander:
         # list all files in directory
         st.write("# public database")
         for filename in files:
-            st.write(f"{filename}")
+            if ".md" in filename:
+                filename = filename.replace("md","pdf")
+            st.write(f"Public/{filename}")
         st.write()
         st.write("# private database")
         for filename in files_2:
             # display the file name in the left column
-            st.write(f"{filename}")
+            if ".md" in filename:
+                filename = filename.replace("md","pdf")
+            st.write(f"Private/{filename}")
+        st.write()
+        st.write("# raptor database")
+        for filename in files_3:
+            # display the file name in the left column
+            if ".md" in filename:
+                filename = filename.replace("md","pdf")
+            st.write(f"Raptor/{filename}")
         
 def app_parameters():
     param_expander = st.expander(label='App llm parameters')
@@ -124,7 +136,7 @@ def manage_db():
             vector_db.add_missing_document_to_database()
                 
         # Delete a document
-        path_to_doc_to_delete = st.text_input("Document to delete (case sensitive)")
+        path_to_doc_to_delete = st.text_input("Document to delete (case sensitive): Public/Private/Raptor/ + file_name (For example: Public/BAHLB1400_21.10.2019_D_E.pdf)")
 
         # button to delete a document
         if st.button('Delete document'):

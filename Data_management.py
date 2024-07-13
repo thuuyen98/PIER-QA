@@ -48,8 +48,8 @@ class ChatController(object):
         
     def _create_chat_agent(self):
         self.use_private_data = False
-        self.model = "../rag/merged/ggml-model-Q6_K_M.gguf"
-        self.retriever_output_number = 10 #default value is 15
+        self.model = "RAG-Llama3-70B"
+        self.retriever_output_number = 15 #default value is 15
         self.vectordb = ElasticSearch(txt_directory = './Database/Public/preprocessing_outputs/', index_name='public_db')
         self.vectordb_private = ElasticSearch(txt_directory = './Database/Private/preprocessing_outputs/', index_name='private_db')
         self.vectordb_raptor = ElasticSearch(txt_directory = './Database/Raptor/preprocessing_outputs/', index_name='raptor_db')

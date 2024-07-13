@@ -12,6 +12,7 @@ from langchain_community import document_loaders
 from langchain_core.documents import Document
 from elasticsearch.helpers import scan
 from elasticsearch import Elasticsearch
+import os
 
 llama = LlamaCppEmbeddings(model_path="./Model/gte-Qwen2-7B-instruct.Q5_K.gguf", n_gpu_layers=9999)
 llama.client.verbose = False
@@ -74,16 +75,32 @@ class ElasticSearch(object):
             self.add_a_loader_to_database(*args, loader=loader)
         elif method == 'Delete':
             records = self.get_all_metadata()
-
-            for r in records:
-                if r['_source']['metadata']['source'] == filepath:
-                    ids_to_delete.append(idx)
-
-            if len(ids_to_delete) > 0:
-                print("document has been found and deleted")
-                self.vectordb.delete(ids=ids_to_delete)
+            ids_to_delete = []
+            names = filepath.split("/")
+            if len(names) == 2:
+                if "pdf" in names[1]:
+                    path = "./Database/" + names[0] + "/Files/header_footer_remove/" + names[1]
+                    if os.path.exists(path):
+                        os.remove(path)
+                name = names[1]
+                if "pdf" in names[1]:
+                    name = name.replace("pdf", "md")
+                path_2 = "./Database/" + names[0] + "/preprocessing_outputs/" + name
+                if os.path.exists(path_2):
+                        os.remove(path_2)
+                for r in records:
+                    print(r)
+                    id = r['_id']
+                    if r['_source']['metadata']['source'] == path_2:
+                        ids_to_delete.append(id)
+    
+                if len(ids_to_delete) > 0:
+                    print("document has been found and deleted")
+                    self.vectordb.delete(ids=ids_to_delete)
+                else:
+                    print("no document found, nothing has been deleted")
             else:
-                print("no document found, nothing has been deleted")
+                print("path is not in correct format")
         else:
             print("none or unknown method given")
 
