@@ -1,0 +1,3863 @@
+{
+    "languages": [
+        "en"
+    ],
+    "filetype": "pdf",
+    "toc": [
+        {
+            "title": "Front Cover",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 0,
+            "view_mode": "XYZ",
+            "view_pos": [
+                57.78690719604492,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "Table of Contents",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 2,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                713.8356323242188,
+                0.0
+            ]
+        },
+        {
+            "title": "List of Figures",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 10,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                153.7044677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "List of Tables",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 11,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                383.7639465332031,
+                0.0
+            ]
+        },
+        {
+            "title": "1 Introduction",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 7,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.1 Inputs and Outputs",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                557.3324584960938,
+                0.0
+            ]
+        },
+        {
+            "title": "1.2 Communication Interfaces",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                390.75006103515625,
+                0.0
+            ]
+        },
+        {
+            "title": "1.3 Safety and Certification",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 13,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                305.9532775878906,
+                0.0
+            ]
+        },
+        {
+            "title": "1.4 Programming Options",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5 HY-TTC 500 Variants",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 8,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                629.3614501953125,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.1 HY-TTC 500 FPGA Variants",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 14,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                292.8241271972656,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.2 HY-TTC 580 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 18,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.3 HY-TTC 540 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 22,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.4 HY-TTC 520 Variant (Customer-specific variant only)",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 26,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.5 HY-TTC 510 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 30,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.6 HY-TTC 590E Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 34,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.7 HY-TTC 590 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 38,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.5.8 HY-TTC 508 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 42,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6 Standards and Guidelines",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 8,
+            "page_index": 46,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.1 Electrical Capability",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 47,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.2 Mechanical Capability",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 47,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                428.08953857421875,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.3 Climatic Capability",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 47,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                277.7679748535156,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.4 Chemical Capability",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 48,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                669.8327026367188,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.5 Ingress Protection Capability",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 48,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                177.43310546875,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.6 ESD and EMC Capability for Road Vehicles",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 49,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.7 ESD and EMC Capability for Industrial Applications",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 49,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                433.50982666015625,
+                0.0
+            ]
+        },
+        {
+            "title": "1.6.8 Functional Safety",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 49,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                313.1802978515625,
+                0.0
+            ]
+        },
+        {
+            "title": "1.7 Instructions for Safe Operation",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 50,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.7.1 General",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 50,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                665.3760375976562,
+                0.0
+            ]
+        },
+        {
+            "title": "1.7.2 Checks to be done before commissioning the ECU",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 51,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "1.7.3 Intended use",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 51,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                550.828125,
+                0.0
+            ]
+        },
+        {
+            "title": "1.7.4 Improper use",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 51,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                419.1763000488281,
+                0.0
+            ]
+        },
+        {
+            "title": "2 Mounting and Label",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 52,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "2.1 Mounting Requirements",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 52,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                699.2225341796875,
+                0.0
+            ]
+        },
+        {
+            "title": "2.2 Label Information",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 52,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                614.546142578125,
+                0.0
+            ]
+        },
+        {
+            "title": "3 Pinning and Connector",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 5,
+            "page_index": 53,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.1 Connector",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 53,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                699.2225341796875,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2 Mating Connector",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 54,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.1 KOSTAL Mating Connector",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 55,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.1.1 Mating Connector 96-positions",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 55,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                612.8597412109375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.1.2 Mating Connector 58-positions",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 55,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                371.1167297363281,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.1.3 Crimp Contacts",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 56,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.1.4 Tools",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 56,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                382.80035400390625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.2 BOSCH Mating Connector",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 57,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.2.1 Mating Connector 96-positions",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 57,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                611.7758178710938,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.2.2 Mating Connector 58-positions",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 57,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                458.20208740234375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.2.3 Crimp Contacts",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 58,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.2.2.4 Tools",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 58,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                514.8135986328125,
+                0.0
+            ]
+        },
+        {
+            "title": "3.3 Cable Harness",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 59,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.4 Fuse",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 59,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                570.10009765625,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5 HY-TTC 500 Family Pinning",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 7,
+            "page_index": 60,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.1 HY-TTC 580 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 61,
+            "view_mode": "XYZ",
+            "view_pos": [
+                519.1104125976562,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.2 HY-TTC 540 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 68,
+            "view_mode": "XYZ",
+            "view_pos": [
+                507.66766357421875,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.3 HY-TTC 520 Variant (Customer-specific variant only)",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 75,
+            "view_mode": "XYZ",
+            "view_pos": [
+                519.1104125976562,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.4 HY-TTC 510 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 81,
+            "view_mode": "XYZ",
+            "view_pos": [
+                519.1104125976562,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.5 HY-TTC 590E Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 87,
+            "view_mode": "XYZ",
+            "view_pos": [
+                519.1104125976562,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.6 HY-TTC 590 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 94,
+            "view_mode": "XYZ",
+            "view_pos": [
+                507.66766357421875,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "3.5.7 HY-TTC 508 Variant",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 101,
+            "view_mode": "XYZ",
+            "view_pos": [
+                519.1104125976562,
+                493.3734436035156,
+                0.0
+            ]
+        },
+        {
+            "title": "4 Specification of Inputs and Outputs",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 22,
+            "page_index": 107,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1 BAT+ Power",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 107,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                699.3429565429688,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 107,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                675.1325073242188,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 107,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                226.21533203125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 108,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                667.4237060546875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.1.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 108,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                270.7818603515625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2 BAT+ CPU",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 109,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 109,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 110,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 111,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 111,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                458.4429626464844,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.5 Low-Voltage Operation",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 112,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.5.1 HY-TTC 500 ISO 16750 functional status",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 114,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.2.6 Voltage Monitoring",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 114,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                424.71697998046875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.3 BAT-",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 115,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.3.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 115,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.3.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 116,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.3.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 116,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                596.358154296875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.4 Sensor GND",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 117,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.4.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 117,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.4.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 118,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.4.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 118,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                653.5719604492188,
+                0.0
+            ]
+        },
+        {
+            "title": "4.5 Terminal 15",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 119,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.5.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 119,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.5.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 120,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.5.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 120,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                582.747314453125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.5.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 120,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                463.983642578125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.6 Wake-Up",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 121,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.6.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 121,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.6.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 121,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                326.7911682128906,
+                0.0
+            ]
+        },
+        {
+            "title": "4.6.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 122,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                620.6890869140625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.6.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 122,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                501.92535400390625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.7 Sensor Supplies 5 V",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 123,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.7.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 123,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.7.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 123,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                324.6230163574219,
+                0.0
+            ]
+        },
+        {
+            "title": "4.7.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 124,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                490.0008239746094,
+                0.0
+            ]
+        },
+        {
+            "title": "4.7.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 124,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                390.0273742675781,
+                0.0
+            ]
+        },
+        {
+            "title": "4.8 Sensor Supply Variable",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 125,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.8.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 125,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.8.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 125,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                337.7521057128906,
+                0.0
+            ]
+        },
+        {
+            "title": "4.8.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 126,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                490.0008239746094,
+                0.0
+            ]
+        },
+        {
+            "title": "4.8.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 126,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                390.0273742675781,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9 Analog Input 3 Modes",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 127,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 127,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 127,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                281.2610778808594,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 128,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.4 Analog Voltage Input",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 128,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                587.4450073242188,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.4.1 Characteristics of 5 V Input (Ratiometric)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 129,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                444.22979736328125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.4.2 Characteristics of 5 V Input (Absolute)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 130,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.4.3 Characteristics of 5 V Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 130,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                513.3681640625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.5 Analog Current Input",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 131,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.5.1 Characteristics of Analog Current Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 132,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.6 Analog Resistance Input",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 132,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                460.8519287109375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.9.6.1 Characteristics of Analog Resistance Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 133,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                226.9380340576172,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10 Analog Input 2 Modes",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 5,
+            "page_index": 135,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 135,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 136,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 136,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                549.3826904296875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.4 Analog Voltage Input",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 5,
+            "page_index": 137,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.4.1 Characteristics of 5 V Input (Ratiometric)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 137,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                670.194091796875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.4.2 Characteristics of 5 V Input (Absolute)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 137,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                411.8287658691406,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.4.3 Characteristics of 10 V Input (Absolute)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 138,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.4.4 Characteristics of 32 V Input (Absolute)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 138,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                513.3681640625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.4.5 Characteristics of 32 V Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 139,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.5 Analog Current Input",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 140,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.10.5.1 Characteristics of Analog Current Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 140,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                670.194091796875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11 Timer Inputs",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 5,
+            "page_index": 141,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 141,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 142,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 142,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                282.4654846191406,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.4 Timer and Current Loop Inputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 145,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.4.1 Characteristics of Timer Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 145,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.4.2 Characteristics of Current Loop Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 145,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                437.6051025390625,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.5 Analog and Digital Inputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 147,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.5.1 Characteristics of Analog Voltage Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 147,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.11.5.2 Characteristics of Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 147,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                488.7963562011719,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12 High-Side PWM Outputs",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 9,
+            "page_index": 148,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 148,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.2 Functional Description",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 149,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                421.223876953125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.2.1 Power Stage Pairing",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 151,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.2.2 Mutual Exclusive Mode",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 151,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                555.4052124023438,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 151,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                426.7646179199219,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.4 High-Side PWM Outputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 152,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.4.1 Characteristics of High-Side PWM Output",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 152,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.4.2 Diagnostic Functions",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 152,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                254.1597442626953,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.4.3 Current Measurement",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 153,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                355.3377685546875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.5 High-Side Digital Outputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 155,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.5.1 Characteristics of High-Side Digital Output",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 155,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                645.1404418945312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.6 Digital and Frequency Inputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 155,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                324.8638610839844,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.6.1 Characteristics of Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 156,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.6.2 Characteristics of Timer Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 156,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                486.9895324707031,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.7 Secondary Shut-off Paths",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 157,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.8 External Shut-off Groups",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 158,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.8.1 Characteristics of External Shut-off",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 158,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                448.56610107421875,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.9 Tertiary Shut-off Path",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 159,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.12.9.1 Functional description",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 159,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13 High-Side Digital Outputs",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 160,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 160,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.2 Functional Description",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 161,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.2.1 Power Stage Pairing",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 162,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.2.2 Mutual Exclusive Mode",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 162,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                555.4052124023438,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.3 Diagnostic Functions",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 162,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                456.8770751953125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.4 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 162,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                286.0790100097656,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.5 High-Side Digital Outputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 163,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.5.1 Characteristics of High-Side Output",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 163,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.6 Analog and Digital Inputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 164,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.6.1 Characteristics of Analog Voltage Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 164,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                639.9610595703125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.13.6.2 Characteristics of Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 164,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                322.3343811035156,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14 High-Side Digital/PVG/VOUT Outputs",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 7,
+            "page_index": 166,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 166,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.2 Functional Description",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 167,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.2.1 Power Stage Pairing",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 167,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                593.3468627929688,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.2.2 Mutual Exclusive Mode",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 167,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                420.74212646484375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 167,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                308.6031799316406,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.4 High-Side Digital Outputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 168,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.4.1 Diagnostic Functions",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 169,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.4.2 Characteristics of High-Side Digital",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 169,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                557.091552734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.5 PVG Outputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 170,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.5.1 Characteristics of PVG",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 171,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.6 VOUT Outputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 172,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.6.1 Characteristics of VOUT",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 173,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.7 Analog and Digital Inputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 174,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.7.1 Characteristics of Analog Voltage Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 174,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                596.2378540039062,
+                0.0
+            ]
+        },
+        {
+            "title": "4.14.7.2 Characteristics of Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 174,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                278.6111145019531,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15 Low-Side Digital Outputs",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 176,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 176,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.2 Functional Description",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 177,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.2.1 Power Stage Pairing",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 178,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.3 Diagnostic Functions",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 178,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                582.6268920898438,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.4 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 178,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                411.8287658691406,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.5 Characteristics of Low-Side Digital Output",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 179,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.6 Analog and Digital Inputs",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 180,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.6.1 Characteristics of Analog Voltage Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 180,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "4.15.6.2 Characteristics of Digital Input",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 180,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                385.93206787109375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.16 LIN",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 181,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.16.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 181,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.16.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 182,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.16.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 183,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.16.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 183,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                636.468017578125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.17 RS232",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 184,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.17.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 184,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.17.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 185,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.17.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 185,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                399.0611267089844,
+                0.0
+            ]
+        },
+        {
+            "title": "4.17.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 185,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                295.3536376953125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.18 CAN",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 186,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.18.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 186,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.18.2 Functional Description",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 187,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.18.2.1 CAN1 on HY-TTC 590E, HY-TTC 590, and HY-TTC 508",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 187,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                495.3006286621094,
+                0.0
+            ]
+        },
+        {
+            "title": "4.18.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 189,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.18.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 189,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                624.54345703125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.19 CAN Termination",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 190,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.19.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 190,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.19.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 191,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.20 Ethernet",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 192,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.20.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 192,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.20.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 193,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.20.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 193,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                410.26300048828125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.21 BroadR-Reach\u00ae",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 194,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.21.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 194,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "4.21.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 194,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                300.6534423828125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.21.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 195,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.21.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 195,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                624.54345703125,
+                0.0
+            ]
+        },
+        {
+            "title": "4.22 Real-Time Clock (RTC)",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 196,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.22.1 Pinout",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 196,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.6791381835938,
+                0.0
+            ]
+        },
+        {
+            "title": "4.22.2 Functional Description",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 197,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.22.3 Maximum Ratings",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 198,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "4.22.4 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 198,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                636.468017578125,
+                0.0
+            ]
+        },
+        {
+            "title": "5 Internal Structure",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 199,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1 Safety Concept",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 199,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                701.5110473632812,
+                0.0
+            ]
+        },
+        {
+            "title": "5.1.1 Overview Safety Concept",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 199,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                628.2775268554688,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2 Thermal Management",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 201,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.1 Board Temperature Sensor",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 201,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.1.1 Pinout",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 201,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                679.34814453125,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.1.2 Functional Description",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 201,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                605.7532958984375,
+                0.0
+            ]
+        },
+        {
+            "title": "5.2.2 Characteristics",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 202,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6 Application Notes",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 203,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.1 Cable Harness",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 203,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                699.3429565429688,
+                0.0
+            ]
+        },
+        {
+            "title": "6.2 Handling of High-Load Current",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 204,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.2.1 Load Distribution",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 204,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "6.2.2 Total Load Current",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 204,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                550.7077026367188,
+                0.0
+            ]
+        },
+        {
+            "title": "6.2.2.1 Calculation of the battery supply current",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 205,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.3 Inductive Loads",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 206,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.3.1 Inductive Loads at PWM Outputs",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 206,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "6.3.2 Inductive Loads at Low Side Switches",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 206,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                561.3072509765625,
+                0.0
+            ]
+        },
+        {
+            "title": "6.4 Ground Connection of Housing",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 206,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                429.6553955078125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5 Motor Control",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 9,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.1 Motor Types supported",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                658.630859375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.2 Direct Control Options",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 4,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                527.9425659179688,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.2.1 Depending on Direction",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                470.2470703125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.2.2 Depending on Single Motor / Motor Group",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                400.98828125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.2.3 Depending on Control",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                329.8023986816406,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.2.4 Depending on stalled Motor Current",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 207,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                256.5687255859375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3 Motor Details",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 13,
+            "page_index": 208,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.1 Start Current",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 208,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                704.40185546875,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.2 Start Current at low Temperatures",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 208,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                468.0789489746094,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.3 Battery Voltage Impact",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 208,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                346.7857971191406,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.4 Motors with Limit Switch",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 208,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                225.37220764160156,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.5 Motors with Electronics Inside",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 209,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.6 Unidirectional Motor Drive",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 209,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                606.3555908203125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.7 Bidirectional Motor Drive",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 209,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                542.276123046875,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.8 Active Motor Brake",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 209,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                478.31719970703125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.9 Motors Reversing with / without Braking",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 209,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                414.3582458496094,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.10 PWM Operation / steady State Control",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 209,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                268.7342529296875,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.11 Maximum Average Current (PWM and Digital Power Stages)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 210,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.12 Peak Current Bidirectional Drive (Digital Power Stages only)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 210,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                629.3614501953125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.3.13 Peak Current Unidirectional Drive (Digital Power Stages only)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 210,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                517.4635009765625,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.4 Motor Classification",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 2,
+            "page_index": 211,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.4.1 Independent from Speed Class",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 211,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.4.2 Fast Accelerating Motors only",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 214,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5 Connection",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 6,
+            "page_index": 219,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5.1 Unidirectional Single Power Stage",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 219,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                705.6062622070312,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5.2 Unidirectional Double Power Stage",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 221,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5.3 Bidirectional H-bridge (Single Power Stages)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 222,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5.4 Bidirectional H-bridge (Multiple Low Side Power Stages)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 223,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5.5 Bidirectional H-bridge (Multiple High and Low Side Power Stages)",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 224,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.5.6 Motor Cluster",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 225,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.6 Power Stages for Motor Control",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 226,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.6.1 High Side Power Stages for PWM Operation",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 226,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                703.5586547851562,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.6.2 High Side Power Stages for Static Operation",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 226,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                548.4190673828125,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.6.3 Low Side Power Stages",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 226,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                393.7613220214844,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.7 Parallel Operation of Power Stages",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 227,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.8 Cabling",
+            "level": 2,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 227,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                581.06103515625,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.9 Control Sequence for Bidirectional Drive",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 3,
+            "page_index": 227,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                236.69451904296875,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.9.1 Motor Running",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 228,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.9.2 Motor Breaking",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 228,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                645.1404418945312,
+                0.0
+            ]
+        },
+        {
+            "title": "6.5.9.3 Paralleled High Side Power Stage Control",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 228,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                436.40057373046875,
+                0.0
+            ]
+        },
+        {
+            "title": "6.6 Power Stage Alternative Functions",
+            "level": 1,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 229,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "6.6.1 High-Side Output Stages",
+            "level": 2,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 229,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                656.5831909179688,
+                0.0
+            ]
+        },
+        {
+            "title": "6.6.1.1 Wiring examples",
+            "level": 3,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 229,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                456.9975280761719,
+                0.0
+            ]
+        },
+        {
+            "title": "7 Debugging",
+            "level": 0,
+            "is_closed": true,
+            "n_kids": 1,
+            "page_index": 235,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "7.1 Functional Description",
+            "level": 1,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 235,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                699.2225341796875,
+                0.0
+            ]
+        },
+        {
+            "title": "8 API Documentation",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 237,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "Glossary",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 238,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "References",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 240,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                724.5169677734375,
+                0.0
+            ]
+        },
+        {
+            "title": "Index",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 242,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                699.4634399414062,
+                0.0
+            ]
+        },
+        {
+            "title": "Disposal",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 245,
+            "view_mode": "XYZ",
+            "view_pos": [
+                89.1039047241211,
+                713.8356323242188,
+                0.0
+            ]
+        },
+        {
+            "title": "Legal Disclaimer",
+            "level": 0,
+            "is_closed": null,
+            "n_kids": 0,
+            "page_index": 246,
+            "view_mode": "XYZ",
+            "view_pos": [
+                77.6611557006836,
+                713.8356323242188,
+                0.0
+            ]
+        }
+    ],
+    "pages": 247,
+    "ocr_stats": {
+        "ocr_pages": 11,
+        "ocr_failed": 0,
+        "ocr_success": 11,
+        "ocr_engine": "surya"
+    },
+    "block_stats": {
+        "header_footer": 310,
+        "code": 0,
+        "table": 209,
+        "equations": {
+            "successful_ocr": 1,
+            "unsuccessful_ocr": 0,
+            "equations": 1
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

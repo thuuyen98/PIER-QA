@@ -11,7 +11,10 @@ import csv
 files = glob.glob("./*.md")
 list_chunks = []
 data_final = []
-instruction = """You are an assistant for question-answering tasks. Use the context that the user gives to answer the question. Treat the context as your internal knowledge, hence do not explicitly mention the "context" in your answer like "Based on the provided context...".If your answer relates to any image description given below, you should refer explicitly to the image ID in your answer with the format [image_id.png].Give a long and detailed answer."""
+instruction = """You are an assistant for question-answering tasks. 
+Use the following pieces of retrieved context to answer the question. The context is in markdown format in which image cations are formatted as [image_id.png](image_caption), for example [0_image_1_1234.png](This is an image); and tables are formatted as [table_id] json_content [/table_id], for example [table_0][{{0: 'header_0', 1: 'header_1'}}, {{0: 'value_0_0', 1: 'value_0_1'}}, {{0: 'value_1_0', 1: 'value_1_1'}}][/table_0].
+Use the maximum sentences you need to provide accurate and detailed answers to diverse queries.
+If you refer to any images or tables, you must refer their tags, for example: [0_image_1_1234.png], [table_0]."""
 model = "MaziyarPanahi/Meta-Llama-3-70B-Instruct-GPTQ"
 model_kwargs={'stop': ['<|eot_id|>', '<|end_of_text|>', '<|start_header_id|>', '<|end_header_id|>']}
 #llm = ChatOpenAI(model_name=model, openai_api_key='BVJD4F99OBYPLI0PTM46PI5VK5D09HUD2B404UT6',model_kwargs=model_kwargs, openai_api_base='https://api.runpod.ai/v2/vllm-svgd8vjj76vhwf/openai/v1/', temperature=0)
@@ -26,23 +29,27 @@ template = """Given the below context, generate 5 questions that cover all infor
 Context: {context}"""
 
 system = """You are an assistant for question-answering tasks. 
-Use the context that the user gives to answer the question. Treat the context as your internal knowledge, hence do not explicitly mention the "context" in your answer like "Based on the provided context...".
-If your answer relates to any image description given below, you should refer explicitly to the image ID in your answer with the format [image_id.png].
-Give a long and detailed answer. Always answer in English regardless of the document language."""
+Use the following pieces of retrieved context to answer the question. The context is in markdown format in which image cations are formatted as [image_id.png](image_caption), for example [0_image_1_1234.png](This is an image); and tables are formatted as [table_id] json_content [/table_id], for example [table_0][{{0: 'header_0', 1: 'header_1'}}, {{0: 'value_0_0', 1: 'value_0_1'}}, {{0: 'value_1_0', 1: 'value_1_1'}}][/table_0].
+Use the maximum sentences you need to provide accurate and detailed answers to diverse queries.
+If you refer to any images or tables, you must refer their tags, for example: [0_image_1_1234.png], [table_0].
 
-# template_answer = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+Context: {context}
 
-# You are an assistant for question-answering tasks. 
-# Use the context that the user gives to answer the question. Treat the context as your internal knowledge, hence do not explicitly mention the "context" in your answer like "Based on the provided context...".
-# If your answer relates to any image description given below, you should refer explicitly to the image ID in your answer with the format [image_id.png].
-# Give a long and detailed answer.<|eot_id|><|start_header_id|>user<|end_header_id|>
+Question: {question}"""
 
-# Context: {context}
+template_answer = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
-# Question: {question}<|eot_id|>
-# <|start_header_id|>assistant<|end_header_id|>
+You are an assistant for question-answering tasks. 
+Use the following pieces of retrieved context to answer the question. The context is in markdown format in which image cations are formatted as [image_id.png](image_caption), for example [0_image_1_1234.png](This is an image); and tables are formatted as [table_id] json_content [/table_id], for example [table_0][{{0: 'header_0', 1: 'header_1'}}, {{0: 'value_0_0', 1: 'value_0_1'}}, {{0: 'value_1_0', 1: 'value_1_1'}}][/table_0].
+Use the maximum sentences you need to provide accurate and detailed answers to diverse queries.
+If you refer to any images or tables, you must refer their tags, for example: [0_image_1_1234.png], [table_0].<|eot_id|><|start_header_id|>user<|end_header_id|>
 
-# Answer (long):"""
+Context: {context}
+
+Question: {question}<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+
+"""
 
 def table_to_dict_list(table_text):
         # Split table text into lines

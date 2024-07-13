@@ -1,0 +1,23 @@
+Using external RAM
+Question:
+How can I place variables into the external RAM?
+
+Answer:
+In the linker script bsp\mem_ttc500_bl.lsf after .app_cfg place the following line:
+
+.ext_ram: palign = 4 {*(.EXT_RAM)} load=ext_ram
+In your application files (.c) use prgamas to place the variables into the external RAM, e.g.
+
+#define MEMSIZE (16*1024)
+#pragma DATA_ALIGN(external_1, 4U)
+#pragma DATA_ALIGN(external_2, 4U)
+#pragma SET_DATA_SECTION(".EXT_RAM")
+static ubyte1 external_1[MEMSIZE];
+static ubyte1 external_2[MEMSIZE];
+#pragma SET_DATA_SECTION( )
+The two variables external_1 and external_2 will now be linked to the external RAM.
+To check if it is correctly applied, compile the project and search the variable name in the map file. If it’s address is between 0x6000000 and 0x6020000, then it is correctly linked to the external RAM.
+
+
+
+PS: for a detailed memory mapping check out the TTC 500 Quick Start Guide C Programming.
