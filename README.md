@@ -70,12 +70,18 @@ The aim is to provide a simple app implementing a RAG function on specific docum
 │   │   ├── Private
 │   │   │   ├── preprocessing_output
 │   │   │   ├── Files
+│   │   │   │   ├──header_footer_remove
+│   │   │   │   │   ├──markdown
 │   │   ├── Public
 │   │   │   ├── preprocessing_output
 │   │   │   ├── Files
+│   │   │   │   ├──header_footer_remove
+│   │   │   │   │   ├──markdown
 │   │   ├── Raptor
 │   │   │   ├── preprocessing_output
 │   │   │   ├── Files
+│   │   │   │   ├──header_footer_remove
+│   │   │   │   │   ├──markdown
 ```
 ## Adding a new document
 New document can be added using the following methods
