@@ -1,40 +1,52 @@
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  918][         clip_model_load] clip_model_load: loaded meta data with 18 key-value pairs and 377 tensors from Model/mmproj-model-f16.gguf
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  929][         clip_model_load] clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   0:                       general.architecture str              = clip
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   4:                          general.file_type u32              = 1
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   7:                     clip.vision.image_size u32              = 336
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   8:                     clip.vision.patch_size u32              = 14
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   9:               clip.vision.embedding_length u32              = 1024
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  10:            clip.vision.feed_forward_length u32              = 4096
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  11:                 clip.vision.projection_dim u32              = 768
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  12:           clip.vision.attention.head_count u32              = 16
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  13:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  14:                    clip.vision.block_count u32              = 23
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  15:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  16:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  17:                              clip.use_gelu bool             = false
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  954][         clip_model_load] clip_model_load: - type  f32:  235 tensors
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  954][         clip_model_load] clip_model_load: - type  f16:  142 tensors
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  996][         clip_model_load] clip_model_load: CLIP using CUDA backend
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp: 1039][         clip_model_load] clip_model_load: params backend buffer size =  595.49 MB (377 tensors)
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.image_grid_pinpoints not found in file
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.mm_patch_merge_type not found in file
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.image_crop_resolution not found in file
-[1720912577] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp: 1316][         clip_model_load] clip_model_load: compute allocated memory: 32.89 MB
-[1720912734] encode_image_with_clip: image embedding created: 576 tokens
-[1720912734] 
-encode_image_with_clip: image encoded in   164.64 ms by CLIP (    0.29 ms per image patch)
-[1720912734] encode_image_with_clip: image embedding created: 576 tokens
-[1720912734] 
-encode_image_with_clip: image encoded in    21.83 ms by CLIP (    0.04 ms per image patch)
-[1720912735] encode_image_with_clip: image embedding created: 576 tokens
-[1720912735] 
-encode_image_with_clip: image encoded in    21.76 ms by CLIP (    0.04 ms per image patch)
-[1720912736] encode_image_with_clip: image embedding created: 576 tokens
-[1720912736] 
-encode_image_with_clip: image encoded in    21.98 ms by CLIP (    0.04 ms per image patch)
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  918][         clip_model_load] clip_model_load: loaded meta data with 18 key-value pairs and 377 tensors from Model/mmproj-model-f16.gguf
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  929][         clip_model_load] clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   0:                       general.architecture str              = clip
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   4:                          general.file_type u32              = 1
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   7:                     clip.vision.image_size u32              = 336
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   8:                     clip.vision.patch_size u32              = 14
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv   9:               clip.vision.embedding_length u32              = 1024
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  10:            clip.vision.feed_forward_length u32              = 4096
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  11:                 clip.vision.projection_dim u32              = 768
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  12:           clip.vision.attention.head_count u32              = 16
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  13:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  14:                    clip.vision.block_count u32              = 23
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  15:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  16:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  945][         clip_model_load] clip_model_load: - kv  17:                              clip.use_gelu bool             = false
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  954][         clip_model_load] clip_model_load: - type  f32:  235 tensors
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  954][         clip_model_load] clip_model_load: - type  f16:  142 tensors
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  996][         clip_model_load] clip_model_load: CLIP using CUDA backend
+[1720970494] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp: 1039][         clip_model_load] clip_model_load: params backend buffer size =  595.49 MB (377 tensors)
+[1720970495] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.image_grid_pinpoints not found in file
+[1720970495] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.mm_patch_merge_type not found in file
+[1720970495] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp:  149][             get_key_idx] key clip.vision.image_crop_resolution not found in file
+[1720970496] [/tmp/pip-install-u_gnpw9g/llama-cpp-python_eb31f626829b49f6a193a69fdaf6bf45/vendor/llama.cpp/examples/llava/clip.cpp: 1316][         clip_model_load] clip_model_load: compute allocated memory: 32.89 MB
+[1720970733] encode_image_with_clip: image embedding created: 576 tokens
+[1720970733] 
+encode_image_with_clip: image encoded in    67.07 ms by CLIP (    0.12 ms per image patch)
+[1720970735] encode_image_with_clip: image embedding created: 576 tokens
+[1720970735] 
+encode_image_with_clip: image encoded in    30.83 ms by CLIP (    0.05 ms per image patch)
+[1720970871] encode_image_with_clip: image embedding created: 576 tokens
+[1720970871] 
+encode_image_with_clip: image encoded in    27.82 ms by CLIP (    0.05 ms per image patch)
+[1720970873] encode_image_with_clip: image embedding created: 576 tokens
+[1720970873] 
+encode_image_with_clip: image encoded in    36.08 ms by CLIP (    0.06 ms per image patch)
+[1720971419] encode_image_with_clip: image embedding created: 576 tokens
+[1720971419] 
+encode_image_with_clip: image encoded in    28.84 ms by CLIP (    0.05 ms per image patch)
+[1720971420] encode_image_with_clip: image embedding created: 576 tokens
+[1720971420] 
+encode_image_with_clip: image encoded in    32.36 ms by CLIP (    0.06 ms per image patch)
+[1720971546] encode_image_with_clip: image embedding created: 576 tokens
+[1720971546] 
+encode_image_with_clip: image encoded in    29.43 ms by CLIP (    0.05 ms per image patch)
+[1720971670] encode_image_with_clip: image embedding created: 576 tokens
+[1720971670] 
+encode_image_with_clip: image encoded in    34.38 ms by CLIP (    0.06 ms per image patch)
