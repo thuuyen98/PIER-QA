@@ -87,7 +87,7 @@ class ElasticSearch(object):
                     name = name.replace("pdf", "md")
                 path_2 = "./Database/" + names[0] + "/preprocessing_outputs/" + name
                 if os.path.exists(path_2):
-                        os.remove(path_2)
+                    os.remove(path_2)
                 for r in records:
                     print(r)
                     id = r['_id']
