@@ -91,7 +91,7 @@ Note: adding new document might take a lot of time due to the preprocessing
 
 ## Working with multiple database
 Defaut option is using only data from public database
-Data from private database and RAPTOR database can be also used, in this case the app loop through all DBs
+Data from private database and RAPTOR database can be also used
 
 ## working with retrieval agent or tool agent
 The POC offers the possibility to use both a retrieval agent or a tool agent. 
