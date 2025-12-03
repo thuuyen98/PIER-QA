@@ -6,3 +6,12 @@ venv/*
 Database_new/*
 Database/*
 **/.idea
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
