@@ -32,6 +32,14 @@ setup(
         "scikit-learn>=1.0.0",
         "numpy>=1.20.0",
         "marker-pdf>=0.2.14",
+        # Audio processing dependencies
+        "librosa>=0.10.0",
+        "soundfile>=0.12.0",
+        "nemo_toolkit[asr]==2.5.3",
+        "onnx==1.19.1",
+        "onnxruntime==1.23.2",
+        "omegaconf>=2.3.0",
+        "torch>=2.0.0",
     ],
     extras_require={
         "dev": [

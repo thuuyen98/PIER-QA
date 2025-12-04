@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 File Parser CLI
-PDF processing pipeline: removes headers/footers, converts to markdown, and generates image captions.
+Multimodal processing pipeline: processes PDFs (removes headers/footers, converts to markdown, generates image captions)
+and audio files (diarization and transcription to markdown).
 """
 
 import subprocess
@@ -18,6 +19,7 @@ from mlx_vlm import load, generate
 from mlx_vlm.prompt_utils import apply_chat_template
 from mlx_vlm.utils import load_config
 from file_parser.pdf_parser import PDFExtractor
+from file_parser.audio_parser import AudioExtractor, load_diarization_model, load_asr_model
 
 # Model configuration
 MODEL_PATH = "mlx-community/InternVL3-1B-4bit"
@@ -28,16 +30,34 @@ _model = None
 _processor = None
 _config = None
 
+# Audio models (lazy loading)
+_diar_model = None
+_asr_model = None
 
-def _load_model():
+
+def _load_vlm_model():
     """Lazy load the MLX VLM model to avoid loading it if not needed."""
     global _model, _processor, _config
     if _model is None:
         print("Loading MLX VLM model...")
-        _model, _processor = load(MODEL_PATH)
+        _model, _processor = load(MODEL_PATH, trust_remote_code=True)
         _config = load_config(MODEL_PATH)
         print("Model loaded successfully.")
     return _model, _processor, _config
+
+
+def _load_audio_models(model_name="nvidia/parakeet-tdt-0.6b-v3", source_lang=None, target_lang=None, taskname=None):
+    """Lazy load audio processing models (diarization and ASR)."""
+    global _diar_model, _asr_model
+    if _diar_model is None:
+        print("Loading diarization model...")
+        _diar_model = load_diarization_model()
+        print("Diarization model loaded successfully.")
+    if _asr_model is None:
+        print(f"Loading ASR model ({model_name})...")
+        _asr_model = load_asr_model(model_name)
+        print("ASR model loaded successfully.")
+    return _diar_model, _asr_model
 
 
 def extract_data(pdf_path, output_path):
@@ -70,7 +90,7 @@ def image_to_caption(image_path):
         str: Generated caption text
     """
     # Load model if not already loaded
-    model, processor, config = _load_model()
+    model, processor, config = _load_vlm_model()
     
     # Load image using PIL
     image = [Image.open(image_path)]
@@ -116,13 +136,17 @@ def image_to_caption(image_path):
     return response_text
 
 
-def pipeline(input_dir, output_dir):
+def pipeline(input_dir, output_dir, audio_model="nvidia/parakeet-tdt-0.6b-v3", source_lang=None, target_lang=None, taskname=None):
     """
-    Process PDF files from input directory and output processed markdown files.
+    Process PDF and audio files from input directory and output processed markdown files.
     
     Args:
-        input_dir: Directory containing PDF files to process
+        input_dir: Directory containing files to process
         output_dir: Directory to save processed markdown files
+        audio_model: ASR model name (e.g., "nvidia/canary-1b-v2" or "nvidia/parakeet-tdt-0.6b-v3")
+        source_lang: Source language for canary model
+        target_lang: Target language for canary model
+        taskname: Task name ("asr" or "ast") for canary model
     """
     # Normalize paths
     input_dir = os.path.abspath(input_dir)
@@ -132,14 +156,24 @@ def pipeline(input_dir, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
-    # Copy non-PDF files to output directory
-    all_files = glob.glob(join(input_dir, "*.*"))
-    for p in all_files:
-        if not p.endswith('.pdf'):
-            shutil.copyfile(p, join(output_dir, os.path.basename(p)))
-    
-    # Process PDF files
+    # Detect file types
     pdf_ls = glob.glob(join(input_dir, "*.pdf"))
+    audio_extensions = ['*.wav', '*.mp3', '*.m4a', '*.flac', '*.WAV', '*.MP3', '*.M4A', '*.FLAC']
+    audio_ls = []
+    for ext in audio_extensions:
+        audio_ls.extend(glob.glob(join(input_dir, ext)))
+    
+    # # Copy other files to output directory (skip PDFs and audio files)
+    # all_files = glob.glob(join(input_dir, "*.*"))
+    # for p in all_files:
+    #     is_pdf = p.endswith('.pdf')
+    #     is_audio = any(p.lower().endswith(ext.replace('*', '')) for ext in audio_extensions)
+    #     if not is_pdf and not is_audio:
+    #         shutil.copyfile(p, join(output_dir, os.path.basename(p)))
+    
+    # Load audio models if we have audio files
+    if audio_ls:
+        _load_audio_models(audio_model, source_lang, target_lang, taskname)
     
     # Create temporary directories for processing
     header_removed_path = join(input_dir, 'header_footer_remove')
@@ -206,23 +240,77 @@ def pipeline(input_dir, output_dir):
             print('### Skip image captionization')
         print('### Done!')
     
+    # Process audio files
+    for audio_file in audio_ls:
+        root, file_name = os.path.split(audio_file)
+        print('# PROCESSING', file_name)
+        
+        base_name = os.path.splitext(file_name)[0]
+        md_file = join(output_dir, base_name + '.md')
+        
+        if not Path(md_file).is_file():
+            print('### Transcribing audio', md_file)
+            audio_extractor = AudioExtractor(
+                audio_path=Path(audio_file),
+                output_path=Path(md_file),
+                diar_model=_diar_model,
+                asr_model=_asr_model,
+                model_name=audio_model,
+                source_lang=source_lang,
+                target_lang=target_lang,
+                taskname=taskname,
+            )
+            success = audio_extractor.run()
+            if success:
+                print('### Done!')
+            else:
+                print('### Failed to process audio file')
+        else:
+            print('### Skip transcribing audio (file already exists)')
+    
     print(f'\n### All files processed. Output saved to: {output_dir}')
 
 
 def main():
     """Main function to handle command-line arguments."""
     parser = argparse.ArgumentParser(
-        description='Process PDF files: remove headers/footers, convert to markdown, and generate image captions.'
+        description='Process PDF and audio files: PDFs (remove headers/footers, convert to markdown, generate image captions), '
+                    'Audio files (diarization and transcription to markdown).'
     )
     parser.add_argument(
         'input_dir',
         type=str,
-        help='Input directory containing PDF files to process'
+        help='Input directory containing files to process'
     )
     parser.add_argument(
         'output_dir',
         type=str,
         help='Output directory for processed markdown files'
+    )
+    parser.add_argument(
+        '--audio-model',
+        type=str,
+        default='nvidia/parakeet-tdt-0.6b-v3',
+        help='ASR model name for audio processing (e.g., "nvidia/canary-1b-v2" or "nvidia/parakeet-tdt-0.6b-v3"). Default: nvidia/parakeet-tdt-0.6b-v3'
+    )
+    parser.add_argument(
+        '--source-lang',
+        type=str,
+        default=None,
+        help='Source language for canary model (only relevant when using canary models)'
+    )
+    parser.add_argument(
+        '--target-lang',
+        type=str,
+        default=None,
+        help='Target language for canary model (only relevant when using canary models)'
+    )
+    parser.add_argument(
+        '--taskname',
+        type=str,
+        default=None,
+        choices=['asr', 'ast'],
+        help='Task name for canary model: "asr" or "ast" (only relevant when using canary models)'
     )
     
     args = parser.parse_args()
@@ -233,7 +321,14 @@ def main():
         return
     
     # Run the pipeline
-    pipeline(args.input_dir, args.output_dir)
+    pipeline(
+        args.input_dir,
+        args.output_dir,
+        audio_model=args.audio_model,
+        source_lang=args.source_lang,
+        target_lang=args.target_lang,
+        taskname=args.taskname,
+    )
 
 
 if __name__ == "__main__":
