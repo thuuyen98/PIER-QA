@@ -19,11 +19,29 @@ from mlx_vlm import load, generate
 from mlx_vlm.prompt_utils import apply_chat_template
 from mlx_vlm.utils import load_config
 from file_parser.pdf_parser import PDFExtractor
-from file_parser.audio_parser import AudioExtractor, load_diarization_model, load_asr_model
+
+# Audio parser imports - handle gracefully if dependencies are missing
+try:
+    from file_parser.audio_parser import AudioExtractor, load_diarization_model, load_asr_model
+    AUDIO_SUPPORT = True
+except ImportError as e:
+    print(f"Warning: Audio processing not available: {e}")
+    print("Audio files will be skipped. Make sure all audio dependencies are installed.")
+    AUDIO_SUPPORT = False
+    # Create dummy functions to avoid errors
+    def load_diarization_model():
+        return None
+    def load_asr_model(*args, **kwargs):
+        return None
+    class AudioExtractor:
+        def __init__(self, *args, **kwargs):
+            pass
+        def run(self):
+            return False
 
 # Model configuration
-MODEL_PATH = "mlx-community/InternVL3-1B-4bit"
-PROMPT = "Describe the image in detail. Extract important text from graphs, diagrams, or tables if they appear in the image, and be specific about it."
+MODEL_PATH = "mlx-community/InternVL3-9B-4bit"
+PROMPT = "Describe the image in detail. Extract important text from forms, graphs, diagrams, or tables if they appear in the image."
 
 # Load the model once (lazy loading)
 _model = None
@@ -101,35 +119,10 @@ def image_to_caption(image_path):
     )
     
     # Generate output
-    response = generate(model, processor, formatted_prompt, image, verbose=False)
+    response = generate(model, processor, formatted_prompt, image, verbose=False, max_tokens=2048, top_k=40, top_p=0.8, temperature=0.1)
     
-    # Extract text from GenerationResult object
-    if isinstance(response, str):
-        response_text = response
-    else:
-        # Try to get text from GenerationResult object
-        try:
-            if hasattr(response, 'text'):
-                response_text = response.text
-            elif hasattr(response, 'generated_text'):
-                response_text = response.generated_text
-            elif hasattr(response, 'output'):
-                response_text = response.output
-            elif hasattr(response, '__getitem__'):
-                response_text = response[0] if len(response) > 0 else str(response)
-            else:
-                response_text = str(response)
-        except Exception as e:
-            print(f"Warning: Could not extract text from response: {e}")
-            print(f"Response type: {type(response)}")
-            print(f"Response attributes: {dir(response)}")
-            response_text = str(response)
-    
-    # Clean up the response (remove newlines and extra whitespace)
-    if isinstance(response_text, str):
-        response_text = response_text.replace('\n', ' ').strip()
-    else:
-        response_text = str(response_text).replace('\n', ' ').strip()
+    response_text = response.text
+    response_text = response_text.replace('\n', ' ').strip()
     
     print('\n', image_path)
     print(response_text, '\n')
@@ -158,8 +151,13 @@ def pipeline(input_dir, output_dir, audio_model="nvidia/parakeet-tdt-0.6b-v3", s
     
     # Detect file types
     pdf_ls = glob.glob(join(input_dir, "*.pdf"))
+    image_extensions = ['*.png', '*.jpg', '*.jpeg', '*.bmp', '*.webp', '*.tif', '*.tiff',
+                       '*.PNG', '*.JPG', '*.JPEG', '*.BMP', '*.WEBP', '*.TIF', '*.TIFF']
     audio_extensions = ['*.wav', '*.mp3', '*.m4a', '*.flac', '*.WAV', '*.MP3', '*.M4A', '*.FLAC']
     audio_ls = []
+    image_ls = []
+    for ext in image_extensions:
+        image_ls.extend(glob.glob(join(input_dir, ext)))
     for ext in audio_extensions:
         audio_ls.extend(glob.glob(join(input_dir, ext)))
     
@@ -173,9 +171,31 @@ def pipeline(input_dir, output_dir, audio_model="nvidia/parakeet-tdt-0.6b-v3", s
     
     # Load audio models if we have audio files
     if audio_ls:
-        _load_audio_models(audio_model, source_lang, target_lang, taskname)
+        if not AUDIO_SUPPORT:
+            print("Warning: Audio processing is not available. Skipping audio files.")
+            print("Please ensure all audio dependencies are installed:")
+            print("  librosa, soundfile, nemo_toolkit[asr], onnx, onnxruntime, omegaconf, torch")
+            audio_ls = []  # Skip audio processing
+        else:
+            _load_audio_models(audio_model, source_lang, target_lang, taskname)
     
-    # Create temporary directories for processing
+    # Process standalone images (caption only)
+    for image_file in image_ls:
+        base_name = os.path.splitext(os.path.basename(image_file))[0]
+        md_file = join(output_dir, base_name + '.md')
+
+        if Path(md_file).is_file():
+            print('### Skip image captionization (file already exists)', md_file)
+            continue
+
+        print('# PROCESSING image', os.path.basename(image_file))
+        caption = image_to_caption(image_file)
+        content = f'![{caption}]({os.path.basename(image_file)})\n'
+        with open(md_file, 'w') as f:
+            f.write(content)
+        print('### Done!')
+
+    # Create temporary directories for processing PDFs
     header_removed_path = join(input_dir, 'header_footer_remove')
     md_dir = join(header_removed_path, 'markdown')
     
